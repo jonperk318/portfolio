@@ -6,12 +6,11 @@ import { usePathname } from "next/navigation"
 const Navlink = ({link}) => {
 
     const pathName = usePathname();
-    console.log(pathName)
 
     return (
-        <div className="" href={link.url}>
+        <Link className={`rounded p-1 ${pathName === link.url && "bg-fusha text-black"}`} href={link.url}>
             {link.title}
-        </div>
+        </Link>
     )
 }
 
