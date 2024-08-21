@@ -1,6 +1,5 @@
 "use client"
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -23,12 +22,12 @@ const Navbar = () => {
             {/* LOGO */}
             <div className="z-40 justify-center">
                 <Link href="/">
-                    <Image src="/public/logo.png" className="w-16 hover:scale-125"/>
+                    <img src="/logo.png" className="w-16 hover:scale-125" alt="logo" />
                 </Link>
             </div>
             {/* LINKS */}
-            <div className="hidden md:flex gap-8">
-                {links.map(link => (
+            <div className="hidden md:flex gap-12">
+                {links.map((link) => (
                     <Navlink link={link} key={link.title} />
                 ))}
             </div>
