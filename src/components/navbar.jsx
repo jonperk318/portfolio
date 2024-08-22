@@ -10,6 +10,7 @@ import {motion} from "framer-motion";
 const links = [
     {url: "/", title: "Home"},
     {url: "/about", title: "About"},
+    {url: "/experience", title: "Experience"},
     {url: "/projects", title: "Projects"},
     {url: "/photos", title: "Photos"},
     {url: "/contact", title: "Contact"},
@@ -80,7 +81,7 @@ const Navbar = () => {
             </div>
             {/* LINKS */}
             <div className="hidden md:flex gap-8">
-                {links.map((link) => (
+                {links.slice(1).map((link) => (
                     <Navlink link={link} key={link.title} />
                 ))}
             </div>
@@ -127,9 +128,9 @@ const Navbar = () => {
                         initial="closed" 
                         animate="open" 
                         className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
-                        {links.map(link => (
+                        {links.slice(1).map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>
-                                <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fusha hover:text-black"}>{link.title}</Link>
+                                <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fusha hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>
                             </motion.div>
                         ))}
                     </motion.div>
