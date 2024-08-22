@@ -27,7 +27,7 @@ const Homepage = () => {
                 <div className="w-100% h-full mx-0 opacity-40 blur-lg bg-purple">
                 </div>
               </div>
-              <img src="/IMG_0207.JPG" className="relative object-contain rounded-xl justify-center content-center" alt="sky" />
+              <img src="/IMG_0207.JPG" className="relative object-contain rounded-xl" alt="sky" />
             </div>
           </div>
         </motion.div>
