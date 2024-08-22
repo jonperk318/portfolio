@@ -1,7 +1,7 @@
 "use client"
 import {motion} from "framer-motion";
 
-const ProjectsPage = () => {
+const ExperiencePage = () => {
     return (
         <motion.div 
         className="h-full" 
@@ -9,9 +9,9 @@ const ProjectsPage = () => {
         animate={{y: "0%"}} 
         transition={{duration: 1}}
         >
-            <div className="">Projects Page</div>
+            <div className="">Experience Page</div>
         </motion.div>
     )
 }
 
-export default ProjectsPage;
+export default ExperiencePage;
