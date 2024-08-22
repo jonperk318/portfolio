@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/*<div className="w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-30% via-fusha/[0.3] to-black text-silver">*/}
-        <div className="w-screen h-screen text-silver animated-background bg-black bg-gradient-to-r from-black from-30% via-fusha/[0.15] to-black">
+        <div className="w-screen h-screen text-silver animated-background bg-black bg-gradient-to-r from-black from-30% via-purple/[0.3] to-black">
           <Starfield 
-            starCount={10000}
+            starCount={20000}
             starColor={[255, 255, 255]}
-            speedFactor={0.05}
+            speedFactor={0.03}
             backgroundColor="black" />
           <div className="h-24">
             <Navbar/>
