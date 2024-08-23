@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <motion.div 
         className="h-full" 
-        initial={{y: "-200vh"}} 
+        initial={{y: "-400vh"}} 
         animate={{y: "0%"}} 
         transition={{duration: 1}}
         >
@@ -26,10 +26,9 @@ const AboutPage = () => {
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
                             <h1 className="font-bold text-2xl">Biography</h1>
-                            <p className="text-md">Hi, I'm JP. I'm currently a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and math.
-                                I also do machine learning research at UAB, and work full time as an intelligence analyst at DarkTower, all while currenltly living in Birmingham, AL. I have a lot of fun
-                                solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts on it.</p>
-                            <p className="text-lg">When I'm not behind a computer screen, I enjoy spending time with my girlfriend, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
+                            <p className="text-md">Hi, I'm JP. I'm currently a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
+                                I do machine learning research and work full time as an intelligence analyst at DarkTower. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts on it.</p>
+                            <p className="text-lg">When I'm not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
                             <div className="self-end">
                                 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1046 879" width="200" height="auto">
                                     <title>signature</title>
@@ -45,7 +44,7 @@ const AboutPage = () => {
                         <motion.svg
                             initial={{ opacity: 0, y: 0 }}
                             animate={{ opacity: 1, y: "10px" }}
-                            transition={{ repeat: Infinity, duration: 5, ease: "easeIn" }}
+                            transition={{ repeat: Infinity, duration: 3, ease: "easeIn" }}
                             viewBox="0 0 24 24"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"

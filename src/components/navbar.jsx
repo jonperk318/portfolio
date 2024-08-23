@@ -128,7 +128,7 @@ const Navbar = () => {
                         initial="closed" 
                         animate="open" 
                         className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
-                        {links.slice(1).map(link => (
+                        {links.map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>
                                 <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fusha hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>
                             </motion.div>
