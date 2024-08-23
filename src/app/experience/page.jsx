@@ -10,7 +10,7 @@ const ExperiencePage = () => {
     return (
         <motion.div 
         className="h-full" 
-        initial={{y: "-200vh"}} 
+        initial={{y: "-400vh"}} 
         animate={{y: "0%"}} 
         transition={{duration: 1}}
         >   
@@ -118,7 +118,7 @@ const ExperiencePage = () => {
                     <motion.svg
                         initial={{ opacity: 0, y: 0 }}
                         animate={{ opacity: 1, y: "10px" }}
-                        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+                        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
