@@ -119,7 +119,7 @@ const ProjectsPage = () => {
             </div>
             {/* HIRE ME */}
             <div className="w-screen h-[115vh] flex flex-col gap-16 items-center justify-center text-center">
-                <h1 className="text-3xl md:text-5xl pt-12">Do you have a project? I'd love to hear about it!</h1>
+                <h1 className="text-3xl md:text-5xl pt-12">Do you have a project? I&apos;d love to hear about it!</h1>
                 <div className="relative">
                     <motion.svg animate={{rotate: 360}} transition={{duration: 7, ease: "linear", repeat: Infinity}} viewBox="0 0 300 300" className="w-64 h-64 md:h-[500px] md:w-[500px]">
                         <defs>

@@ -294,7 +294,7 @@ const ExperiencePage = () => {
                             <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
                                 {/* JOB TITLE */}
                                 <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-3 font-semibold">
-                                    Children's Counselor</div>
+                                    Children&apos;s Counselor</div>
                                 {/* JOB DESC */}
                                 <div className="p-3 text-sm italic">
                                     Supervised after-school and seasonal camp programs, directing and mentoring hundreds of children in recreational and academic activities</div>
@@ -321,7 +321,7 @@ const ExperiencePage = () => {
                                     Sep 2019 - Mar 2020</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
-                                    Olexa's Cafe</div>
+                                    Olexa&apos;s Cafe</div>
                             </div>
                             {/* CENTER */}
                             <div>

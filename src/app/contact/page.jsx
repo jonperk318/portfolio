@@ -1,8 +1,33 @@
 "use client"
 import {motion} from "framer-motion";
-import {useState} from "react";
+import {useState, useRef} from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      setError(false);
+      setSuccess(false);
+  
+      emailjs
+        .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            setSuccess(true);
+            form.current.reset();
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setError(true);
+          },
+        );
+    };
 
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
@@ -27,12 +52,15 @@ const ContactPage = () => {
                     </div>
                 </div>
                 {/* FORM CONTAINER */}
-                <form className="h-1/2 lg:h-full lg:w-1/2 bg-black/[0.5] rounded-xl text-xl flex flex-col gap-8 justify-center p-12">
+                <form onSubmit={sendEmail} ref={form} className="h-1/2 lg:h-full lg:w-1/2 bg-black/[0.5] rounded-xl text-xl flex flex-col gap-8 justify-center p-12">
                     <span>Dear JP...</span>
-                    <textarea rows={4} className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none resize-none rounded-md" />
+                    <textarea rows={4} className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none resize-none rounded-md"
+                    name="user_message" />
                     <span>You can reach me at...</span>
-                    <input type="text" placeholder=" email" required className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none rounded-md"/>
-                    <input type="text" placeholder=" phone (optional)" className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none rounded-md"/>
+                    <input type="text" placeholder=" email" required className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none rounded-md"
+                    name="user_email" />
+                    <input type="text" placeholder=" phone (optional)" className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none rounded-md"
+                    name="user_phone" />
                     <button className="bg-transparent p-2 ring-4 ring-light-blue rounded-xl hover:ring-fusha hover:bg-fusha hover:text-black">Send</button>
                     {success && <span className="text-teal font-semibold">Thank you for your message!</span>}
                     {error && <span className="text-watermelon font-semibold">Oops, something went wrong!</span>}

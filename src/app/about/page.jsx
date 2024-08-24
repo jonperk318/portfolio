@@ -26,9 +26,9 @@ const AboutPage = () => {
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
-                            <p className="text-md">Hi, I'm JP. I'm a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
+                            <p className="text-md">Hi, I&apos;m JP. I&apos;m a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
                                 I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower. As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built two web sites from scratch, developed several tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
-                            <p className="text-md">When I'm not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
+                            <p className="text-md">When I&apos;m not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
                                 <div>
