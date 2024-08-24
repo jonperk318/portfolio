@@ -11,15 +11,15 @@ const Homepage = () => {
           animate={{y: "0%"}} 
           transition={{duration: 1}}
           >
-          <div className=" h-full flex flex-col lg:flex-row px-2 sm:px-4 md:px-6 lg:px-10 xl:px-20 text-xl items-center justify-center content-center pt-10">
+          <div className=" h-full flex flex-col lg:flex-row px-2 md:px-3 lg:px-5 xl:px-6 text-xl items-center justify-center content-center pt-10">
             {/* TEXT */}
             <div className="h-full w-1/2 flex flex-col gap-8">
               <h1 className="text-4xl font-bold md:text-6xl">Jonathan Perkins</h1>
               <p className="md:text-xl">
                 Data Scientist, Intelligence Analyst at DarkTower, Physics and Computer Science student at UAB</p>
               <div className="flex gap-4 w-full">
-                <Link className="text-xs md:text-lg p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple" href={"/projects"}>See my work</Link>
-                <Link className="text-xs md:text-lg p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple" href={"/contact"}>Contact me</Link>
+                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple font-semibold" href={"/projects"}>See my work</Link>
+                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple font-semibold" href={"/contact"}>Contact me</Link>
               </div>
             </div>
             {/* IMAGE */}
