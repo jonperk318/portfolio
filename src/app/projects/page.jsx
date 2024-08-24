@@ -65,7 +65,7 @@ const ProjectsPage = () => {
     return (
         <motion.div 
         className="h-full" 
-        initial={{y: "-200vh"}} 
+        initial={{y: "-400vh"}} 
         animate={{y: "0%"}} 
         transition={{duration: 1}}
         >
@@ -96,14 +96,14 @@ const ProjectsPage = () => {
                     ></path>
                 </motion.svg>
                 {/* ITEMS */}
-                <div className="sticky z-40 top-0 flex h-screen gap-4 items-center overflow-hidden">
+                <div className="sticky z-40 top-0 flex h-screen gap-6 items-center overflow-hidden">
                     <motion.div style={{x}} className="flex">
                         <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-fusha to-salmon" />
                         {items.map((item) => (
                             <div className={`h-screen w-screen text-black flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
-                                <div className="flex flex-col gap-8 bg-silver/[0.2] p-4 rounded-xl ring-black ring-2">
-                                    <h1 className="text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl">{item.title}</h1>
-                                    <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[570px] xl:h-[380px]">
+                                <div className="flex flex-col h-[90%] gap-4 bg-white/[0.4] p-4 rounded-xl">
+                                    <h1 className="text-lg font-bold lg:text-xl xl:text-2xl">{item.title}</h1>
+                                    <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[510px] xl:h-[340px]">
                                         <img src={item.img} alt={item.title} fill className="rounded-xl"/>
                                     </div>
                                     <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
