@@ -13,21 +13,21 @@ const AboutPage = () => {
             <div className="h-full flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-20">
                 <h1 className="font-bold text-2xl pt-8 flex justify-center">Biography</h1>
                 {/* BIOGRAPHY CONTAINER */}
-                <div className="h-1/2 flex flex-col md:flex-row px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 justify-center items-center md:items-start pt-10">
+                <div className="h-1/2 flex flex-col md:flex-row px-1 sm:px-2 md:px-3 lg:px-5 xl:px-24 justify-center items-center md:items-start pt-10 gap-10">
                     {/* IMAGE */}
-                    <div className="relative h-1/2 max-w-md md:w-1/3 m-10 pt-8">
-                        <div className="absolute -inset-2 pt-8">
-                            <div className="w-100% h-full mx-0 opacity-40 blur-lg bg-fusha">
+                    <div className="relative h-1/2 max-w-sm md:w-1/3">
+                        <div className="absolute -inset-2">
+                            <div className="h-full mx-0 opacity-40 blur-lg bg-light-blue">
                             </div>
                         </div>
-                        <img src="/profile2.JPG" className="relative object-contain rounded-xl z-10" alt="profile" />
+                        <img src="/profile.JPG" className="relative object-contain rounded-xl z-10" alt="profile" />
                     </div>
                     {/* TEXT */}
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
                             <p className="text-md">Hi, I'm JP. I'm a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
-                                I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower. I have built two web sites from scratch, several tools to expedite web scraping for my job, more than 40 ML models, and eleven algorithm benchmarks in four languages. I am graduating with distinguished honors, and am a recipient of the NASA Alabama Space Grant award. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts on it.</p>
+                                I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower. As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built two web sites from scratch, developed several tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
                             <p className="text-md">When I'm not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
