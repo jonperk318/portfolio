@@ -10,7 +10,7 @@ const ExperiencePage = () => {
     return (
         <motion.div 
         className="h-full" 
-        initial={{y: "-400vh"}} 
+        initial={{y: "-500vh"}} 
         animate={{y: "0%"}} 
         transition={{duration: 1}}
         >   
@@ -149,13 +149,13 @@ const ExperiencePage = () => {
                             {/* LEFT */}
                             <div className="w-1/2 text-right pr-12 pt-6 pl-8 md:pl-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-fusha text-black rounded-b-xl rounded-s-xl p-3 font-semibold">
+                                <div className="bg-fusha text-black rounded-b-xl rounded-s-xl p-2 font-semibold">
                                     Intelligence Analyst II</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Tracked and documented public vulnerabilities of Fortune 500 clients, built tools in Python to increase data collection efficiency, worked in Linux, analyzed leaked SQL databases</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-fusha text-sm font-semibold">
+                                <div className="p-2 text-fusha text-sm font-semibold">
                                     Oct 2023 - Present</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
@@ -185,13 +185,13 @@ const ExperiencePage = () => {
                             {/* RIGHT */}
                             <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-fusha text-black rounded-b-xl rounded-e-xl p-3 font-semibold">
+                                <div className="bg-fusha text-black rounded-b-xl rounded-e-xl p-2 font-semibold">
                                     Machine Learning Researcher</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Trained and validated deep neural nets in Pytorch using hyperspectral data of energy materials to map spectral and spatial features and understand phase stability, fully cleansed HDF5 data of cosmic rays</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-fusha text-sm font-semibold">
+                                <div className="p-2 text-fusha text-sm font-semibold">
                                     Aug 2022 - Present</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">
@@ -203,13 +203,13 @@ const ExperiencePage = () => {
                             {/* LEFT */}
                             <div className="w-1/2 text-right pr-12 pt-6 pl-8 md:pl-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-fusha text-black rounded-b-xl rounded-s-xl p-3 font-semibold">
+                                <div className="bg-fusha text-black rounded-b-xl rounded-s-xl p-2 font-semibold">
                                     Data Scientist Intern</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Participated in REU internship, used NMF and PCA to demonstrate location and cause of energy material degredation</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-fusha text-sm font-semibold">
+                                <div className="p-2 text-fusha text-sm font-semibold">
                                     May 2023 - Aug 2023</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
@@ -239,13 +239,13 @@ const ExperiencePage = () => {
                             {/* RIGHT */}
                             <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-3 font-semibold">
+                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-2 font-semibold">
                                     Chess Instructor</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Supervised daily chess programs, implemented creative techniques to teach strategy, tactics, and critical thinking skills</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-light-blue text-sm font-semibold">
+                                <div className="p-2 text-light-blue text-sm font-semibold">
                                     Aug 2022 - May 2024</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">
@@ -257,13 +257,13 @@ const ExperiencePage = () => {
                             {/* LEFT */}
                             <div className="w-1/2 text-right pr-12 pt-6 pl-8 md:pl-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-light-blue text-black rounded-b-xl rounded-s-xl p-3 font-semibold">
+                                <div className="bg-light-blue text-black rounded-b-xl rounded-s-xl p-2 font-semibold">
                                     Soccer Coach</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Instructed children in soccer techniques, adjusting coaching based on need, communicating regularly about expectations and progress</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-light-blue text-sm font-semibold">
+                                <div className="p-2 text-light-blue text-sm font-semibold">
                                     May 2022 - May 2024</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
@@ -293,13 +293,13 @@ const ExperiencePage = () => {
                             {/* RIGHT */}
                             <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-3 font-semibold">
+                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-2 font-semibold">
                                     Children&apos;s Counselor</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Supervised after-school and seasonal camp programs, directing and mentoring hundreds of children in recreational and academic activities</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-light-blue text-sm font-semibold">
+                                <div className="p-2 text-light-blue text-sm font-semibold">
                                     May 2021 - May 2023</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">
@@ -311,13 +311,13 @@ const ExperiencePage = () => {
                             {/* LEFT */}
                             <div className="w-1/2 text-right pr-12 pt-6 pl-8 md:pl-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-light-blue text-black rounded-b-xl rounded-s-xl p-3 font-semibold">
+                                <div className="bg-light-blue text-black rounded-b-xl rounded-s-xl p-2 font-semibold">
                                     Server</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Greeted customers, served tables, and maintained restaurant</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-light-blue text-sm font-semibold">
+                                <div className="p-2 text-light-blue text-sm font-semibold">
                                     Sep 2019 - Mar 2020</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
@@ -347,13 +347,13 @@ const ExperiencePage = () => {
                             {/* RIGHT */}
                             <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
                                 {/* JOB TITLE */}
-                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-3 font-semibold">
+                                <div className="bg-light-blue text-black rounded-b-xl rounded-e-xl p-2 font-semibold">
                                     Band Member / Camp Leadership</div>
                                 {/* JOB DESC */}
-                                <div className="p-3 text-sm italic">
+                                <div className="p-2 text-sm italic">
                                     Worked in various youth camp leadership positions, traveled the country on three different bands as guitarist, pianist, and vocalist</div>
                                 {/* JOB DATE */}
-                                <div className="p-3 text-light-blue text-sm font-semibold">
+                                <div className="p-2 text-light-blue text-sm font-semibold">
                                     May 2014 - Aug 2019</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">

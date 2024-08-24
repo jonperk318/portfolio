@@ -10,12 +10,12 @@ const AboutPage = () => {
         transition={{duration: 1}}
         >
             {/* CONTAINER */}
-            <div className="h-full flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-20">
-                <h1 className="font-bold text-2xl pt-8 flex justify-center">Biography</h1>
+            <div className="h-full flex flex-col px-3 md:px-4 lg:px-5 xl:px-6">
+                <h1 className="font-bold text-2xl pt-4 flex justify-center">Biography</h1>
                 {/* BIOGRAPHY CONTAINER */}
-                <div className="h-1/2 flex flex-col md:flex-row px-1 sm:px-2 md:px-3 lg:px-5 xl:px-24 justify-center items-center md:items-start pt-10 gap-10">
+                <div className="h-1/2 flex flex-col md:flex-row md:px-2 lg:px-5 xl:px-24 justify-center items-center md:items-start pt-10 gap-10">
                     {/* IMAGE */}
-                    <div className="relative h-1/2 max-w-sm md:w-1/3">
+                    <div className="relative h-1/2 max-w-xs md:w-1/3">
                         <div className="absolute -inset-2">
                             <div className="h-full mx-0 opacity-40 blur-lg bg-light-blue">
                             </div>
@@ -27,7 +27,8 @@ const AboutPage = () => {
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
                             <p className="text-md">Hi, I&apos;m JP. I&apos;m a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
-                                I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower. As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built two web sites from scratch, developed several tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
+                                I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower.</p>
+                                <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built two web sites from scratch, developed several tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
                             <p className="text-md">When I&apos;m not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
@@ -77,20 +78,20 @@ const AboutPage = () => {
                     <h1 className="font-bold text-2xl pt-8 flex justify-center">Education</h1>
                     <div className="flex justify-between gap-12 md:gap-24">
                         {/* LIBERTY */}
-                        <div className="flex flex-col items-center content-center w-1/2 text-center bg-space-cadet rounded-xl p-4">
+                        <div className="flex flex-col items-end content-end w-1/2 text-right bg-space-cadet rounded-xl p-4 text-sm md:text-lg gap-2">
                             <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">B.S. Interdisciplinary Studies</h2>
-                            <h3 className="text-md md:text-lg text-light-blue">Liberty University</h3>
+                            <h3 className="text-light-blue">Liberty University</h3>
                             <p className="italic">Lynchburg, VA</p>
                             <p className="bg-black rounded-xl w-fit p-2">Aug 2016 - Dec 2019</p>
-                            <p>Concentrations in business and world religions</p>
+                            <p className="font-semibold">Concentrations in business and world religions</p>
                         </div>
                         {/* UAB */}
-                        <div className="flex flex-col items-center content-center w-1/2 text-center bg-space-cadet rounded-xl p-4">
+                        <div className="flex flex-col items-start content-start w-1/2 text-left bg-space-cadet rounded-xl p-4 text-sm md:text-lg gap-2">
                             <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">B.S. Physics (Computational Track)</h2>
-                            <h3 className="text-md md:text-lg lg:text-xl text-fusha">University of Alabama at Birmingham</h3>
+                            <h3 className="text-fusha">University of Alabama at Birmingham</h3>
                             <p className="italic">Birmingham, AL</p>
                             <p className="bg-black rounded-xl w-fit p-2">May 2022 - Dec 2024</p>
-                            <p>Minors in Mathematics, Computer and Information Sciences</p>
+                            <p className="font-semibold">Minors in Mathematics, Computer and Information Sciences</p>
                             <p className="italic">High distinguished honors, presidential honor roll, NASA Alabama Space Grant Consortium scholarship recipient</p>
                         </div>
                     </div>
