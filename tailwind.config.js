@@ -30,7 +30,8 @@ module.exports = {
       "blue": "#3c5081",
       "light-blue": "#0095ef",
       "yellow": "#efca00",
-      "teal": "#43c68b"
+      "teal": "#43c68b",
+      "white": "#ffffff",
     }
   },
   plugins: [],
