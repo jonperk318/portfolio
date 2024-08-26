@@ -11,7 +11,7 @@ const Homepage = () => {
           animate={{y: "0%"}} 
           transition={{duration: 1}}
           >
-          <div className=" h-full flex flex-col lg:flex-row px-2 md:px-3 lg:px-5 xl:px-6 text-xl items-center justify-center content-center pt-10">
+          <div className=" h-full flex flex-col lg:flex-row px-2 md:px-10 lg:px-12 xl:px-14 text-xl items-center justify-center content-center pt-10">
             {/* TEXT */}
             <div className="h-full w-1/2 flex flex-col gap-8">
               <h1 className="text-4xl font-bold md:text-6xl">Jonathan Perkins</h1>
