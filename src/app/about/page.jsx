@@ -88,7 +88,7 @@ const AboutPage = () => {
                         {/* UAB */}
                         <div className="flex flex-col items-start content-start w-1/2 text-left bg-space-cadet rounded-xl p-4 text-sm md:text-lg gap-2">
                             <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">B.S. Physics (Computational Track)</h2>
-                            <h3 className="text-fusha">University of Alabama at Birmingham</h3>
+                            <h3 className="text-fuchsia">University of Alabama at Birmingham</h3>
                             <p className="italic">Birmingham, AL</p>
                             <p className="bg-black rounded-xl w-fit p-2">May 2022 - Dec 2024</p>
                             <p className="font-semibold">Minors in Mathematics, Computer and Information Sciences</p>
