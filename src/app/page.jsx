@@ -18,8 +18,8 @@ const Homepage = () => {
               <p className="md:text-xl">
                 Data Scientist, Intelligence Analyst at DarkTower, Physics and Computer Science student at UAB</p>
               <div className="flex gap-4 w-full">
-                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple font-semibold" href={"/projects"}>See my work</Link>
-                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fusha hover:ring-purple hover:bg-purple font-semibold" href={"/contact"}>Contact me</Link>
+                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fuchsia hover:ring-purple hover:bg-purple font-semibold" href={"/projects"}>See my work</Link>
+                <Link className="text-sm md:text-lg text-center p-4 rounded-xl ring-2 ring-fuchsia hover:ring-purple hover:bg-purple font-semibold" href={"/contact"}>Contact me</Link>
               </div>
             </div>
             {/* IMAGE */}

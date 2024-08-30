@@ -12,6 +12,7 @@ const links = [
     {url: "/about", title: "About"},
     {url: "/experience", title: "Experience"},
     {url: "/projects", title: "Projects"},
+    {url: "https://research.jayandsparrow.com", title: "Research"},
     {url: "/photos", title: "Photos"},
     {url: "/contact", title: "Contact"},
 ];
@@ -80,7 +81,7 @@ const Navbar = () => {
                 </Link>
             </div>
             {/* LINKS */}
-            <div className="hidden md:flex gap-8">
+            <div className="hidden md:flex gap-2 text-sm lg:gap-4 lg:text-lg xl:gap-10 xl:text-xl">
                 {links.slice(1).map((link) => (
                     <Navlink link={link} key={link.title} />
                 ))}
@@ -117,9 +118,9 @@ const Navbar = () => {
             <div className="md:hidden">
                 {/* HAMBURGER */}
                 <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={()=>setOpen(!open)}>
-                    <motion.div variants={topVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fusha rounded origin-left"></motion.div>
-                    <motion.div variants={centerVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fusha rounded"></motion.div>
-                    <motion.div variants={bottomVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fusha rounded origin-left"></motion.div>
+                    <motion.div variants={topVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
+                    <motion.div variants={centerVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded"></motion.div>
+                    <motion.div variants={bottomVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
                 </button>
                 {/* MENU LINKS */}
                 {open && (
@@ -130,7 +131,7 @@ const Navbar = () => {
                         className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
                         {links.map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>
-                                <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fusha hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>
+                                <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fuchsia hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>
                             </motion.div>
                         ))}
                     </motion.div>

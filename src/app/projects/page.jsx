@@ -11,7 +11,7 @@ const items = [
         title: "ML analysis of HDF5 data (NMF)",
         desc: "Denoising hyperspectral (HDF5) datasets of hybrid perovskite materials in Python, and using Scikit-learn and Nimfa to build unsupervised Non-negative Matrix Factorization models to extract image and spectral features",
         img: "/nmf.png",
-        link: "https://github.com/jonperk318/machine-learning-analysis-of-hyperspectral-data"
+        link: "https://research.jayandsparrow.com/nmf"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const items = [
         title: "ML analysis of HDF5 data (VAE)",
         desc: "Training, validating, and analyzing unsupervised and semi-supervised variational autoencoder models of hyperspectral datasets of energy materials and of artificial datasets in Pytorch, demonstrating relationships between image and spectral features",
         img: "/ssvae.png",
-        link: "https://github.com/jonperk318/machine-learning-analysis-of-hyperspectral-data"
+        link: "https://research.jayandsparrow.com/vae"
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const items = [
     },
     {
         id: 6,
-        color: "from-light-blue to-fusha",
+        color: "from-light-blue to-fuchsia",
         title: "Telegram Chat CC Parser",
         desc: "Open source intelligence tool built in Python to parse JSON files exported from Telegram channels for credit/debit card information, built to aid response of leaked sensitive information and combat financial fraud",
         img: "/cc-parser.png",
@@ -98,13 +98,13 @@ const ProjectsPage = () => {
                 {/* ITEMS */}
                 <div className="sticky z-40 top-0 flex h-screen gap-6 items-center overflow-hidden">
                     <motion.div style={{x}} className="flex">
-                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-fusha to-salmon" />
+                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-fuchsia to-salmon" />
                         {items.map((item) => (
                             <div className={`h-screen w-screen text-black flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
                                 <div className="flex flex-col h-[90%] gap-4 bg-white/[0.4] p-4 rounded-xl">
                                     <h1 className="text-lg font-bold lg:text-xl xl:text-2xl">{item.title}</h1>
                                     <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[510px] xl:h-[340px]">
-                                        <img src={item.img} alt={item.title} fill className="rounded-xl"/>
+                                        <img src={item.img} alt={item.title} fill="true" className="rounded-xl"/>
                                     </div>
                                     <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     <Link href={item.link} className="flex justify-center">
@@ -113,7 +113,7 @@ const ProjectsPage = () => {
                                 </div>
                             </div>
                         ))}
-                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-fusha to-salmon" />
+                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-fuchsia to-salmon" />
                     </motion.div>
                 </div>
             </div>

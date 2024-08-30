@@ -61,7 +61,7 @@ const ContactPage = () => {
                     name="user_email" />
                     <input type="text" placeholder=" phone (optional)" className="bg-light-blue/[0.3] border-b-2 border-b-light-blue outline-none rounded-md"
                     name="user_phone" />
-                    <button className="bg-transparent p-2 ring-4 ring-light-blue rounded-xl hover:ring-fusha hover:bg-fusha hover:text-black">Send</button>
+                    <button className="bg-transparent p-2 ring-4 ring-light-blue rounded-xl hover:ring-fuchsia hover:bg-fuchsia hover:text-black">Send</button>
                     {success && <span className="text-teal font-semibold">Thank you for your message!</span>}
                     {error && <span className="text-watermelon font-semibold">Oops, something went wrong!</span>}
                 </form>
