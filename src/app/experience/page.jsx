@@ -2,8 +2,8 @@
 import {motion} from "framer-motion";
 import { IconContext } from "react-icons";
 
-import { FaCss3Alt, FaDigitalOcean, FaDocker, FaGitAlt, FaHtml5, FaJava, FaLinux, FaNode, FaPython, FaReact, FaSass } from "react-icons/fa";
-import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJetbrains, SiJupyter, SiMacos, SiMariadb, SiMysql, SiNumpy, SiOpencv, SiPandas, SiPytorch, SiScikitlearn, SiTailwindcss, SiTensorflow, SiVisualstudiocode, SiVite, SiWebpack } from "react-icons/si";
+import { FaAws, FaCss3Alt, FaDigitalOcean, FaDocker, FaGitAlt, FaHtml5, FaJava, FaLinux, FaNode, FaPython, FaReact, FaSass } from "react-icons/fa";
+import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJetbrains, SiJupyter, SiMacos, SiMariadb, SiMysql, SiNumpy, SiScipy, SiOpencv, SiPandas, SiPytorch, SiScikitlearn, SiTailwindcss, SiTensorflow, SiVisualstudiocode, SiVite, SiWebpack } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
 const ExperiencePage = () => {
@@ -21,97 +21,169 @@ const ExperiencePage = () => {
                     <h1 className="font-bold text-2xl pt-8">Skills</h1>
                     <div className="flex flex-row flex-wrap gap-4 justify-center p-16">
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <FaPython />
+                            <a href="https://www.python.org/">
+                                <FaPython />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiNumpy />
+                            <a href="https://numpy.org/">
+                                <SiNumpy />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiPandas />
+                            <a href="https://scipy.org/">
+                                <SiScipy />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiPytorch />
+                            <a href="https://pandas.pydata.org/">
+                                <SiPandas />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiTensorflow />
+                            <a href="https://pytorch.org/">
+                                <SiPytorch />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiScikitlearn/>
+                            <a href="https://www.tensorflow.org/">
+                                <SiTensorflow />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
-                            <SiJupyter />
+                            <a href="https://scikit-learn.org/stable/index.html">
+                                <SiScikitlearn/>
+                            </a>
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
+                            <a href="https://jupyter.org/">
+                                <SiJupyter />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-watermelon", size:62}}>
-                            <FaJava />
+                            <a href="https://www.java.com/">
+                                <FaJava />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:62}}>
-                            <SiJavascript />
+                            <a href="https://www.javascript.com/">
+                                <SiJavascript />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:62}}>
-                            <FaNode />
+                            <a href="https://nodejs.org/">
+                                <FaNode />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:62}}>
-                            <FaReact />
+                            <a href="https://react.dev/">
+                                <FaReact />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:62}}>
-                            <SiVite />
+                            <a href="https://vitejs.dev/">
+                                <SiVite />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:62}}>
-                            <RiNextjsFill />
+                            <a href="https://nextjs.org/">
+                                <RiNextjsFill />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-lilac", size:62}}>
-                            <FaHtml5 />
+                            <a href="https://www.w3schools.com/html/">
+                                <FaHtml5 />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-lilac", size:62}}>
-                            <FaCss3Alt />
+                            <a href="https://www.w3schools.com/css/">
+                                <FaCss3Alt />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-lilac", size:62}}>
-                            <SiTailwindcss />
+                            <a href="https://tailwindcss.com/">
+                                <SiTailwindcss />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-lilac", size:62}}>
-                            <FaSass />
+                            <a href="https://sass-lang.com/">
+                                <FaSass />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-blue", size:62}}>
-                            <SiCplusplus />
+                            <a href="https://www.w3schools.com/cpp/">
+                                <SiCplusplus />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-blue", size:62}}>
-                            <SiOpencv />
+                            <a href="https://opencv.org/">
+                                <SiOpencv />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <SiMysql />
+                            <a href="https://www.mysql.com/">
+                                <SiMysql />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <SiMariadb />
+                            <a href="https://mariadb.org/">
+                                <SiMariadb />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <SiWebpack />
+                            <a href="https://webpack.js.org/">
+                                <SiWebpack />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <FaDocker />
+                            <a href="https://www.docker.com/">
+                                <FaDocker />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <FaGitAlt />
+                            <a href="https://git-scm.com/">
+                                <FaGitAlt />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <FaDigitalOcean />
+                            <a href="https://aws.amazon.com/">
+                                <FaAws />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <SiVisualstudiocode />
+                            <a href="https://www.digitalocean.com/">
+                                <FaDigitalOcean />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
-                            <SiJetbrains />
+                            <a href="https://code.visualstudio.com/">
+                                <SiVisualstudiocode />
+                            </a>
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{className: "hover:scale-125 hover:fill-teal", size:62}}>
+                            <a href="https://www.jetbrains.com/">
+                                <SiJetbrains />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:62}}>
-                            <FaLinux />
+                            <a href="https://www.linux.org/">
+                                <FaLinux />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:62}}>
-                            <SiMacos />
+                            <a href="https://developer.apple.com/macos/">
+                                <SiMacos />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:62}}>
-                            <SiGnu />
+                            <a href="https://www.gnu.org/home.en.html">
+                                <SiGnu />
+                            </a>
                         </IconContext.Provider>
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:62}}>
-                            <SiGnubash />
+                            <a href="https://www.gnu.org/software/bash/">
+                                <SiGnubash />
+                            </a>
                         </IconContext.Provider>
                     </div>
                     {/* SCROLL SVG */}
