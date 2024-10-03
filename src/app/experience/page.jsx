@@ -225,7 +225,7 @@ const ExperiencePage = () => {
                                     Intelligence Analyst II</div>
                                 {/* JOB DESC */}
                                 <div className="p-2 text-sm italic">
-                                    Tracked and documented public vulnerabilities of Fortune 500 clients, built tools in Python to increase data collection efficiency, worked in Linux, analyzed leaked SQL databases</div>
+                                    Tracked and documented vulnerabilities of Fortune 500 clients, built tools in Python to increase data collection efficiency, deployed OSINT software in a Linux environment, wrote automation scripts, analyzed leaked SQL databases</div>
                                 {/* JOB DATE */}
                                 <div className="p-2 text-fuchsia text-sm font-semibold">
                                     Oct 2023 - Present</div>

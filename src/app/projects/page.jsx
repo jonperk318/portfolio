@@ -9,7 +9,7 @@ const items = [
         id: 1,
         color: "from-salmon to-watermelon",
         title: "ML analysis of HDF5 data (NMF)",
-        desc: "Denoising hyperspectral (HDF5) datasets of hybrid perovskite materials in Python, and using Scikit-learn and Nimfa to build unsupervised Non-negative Matrix Factorization models to extract image and spectral features",
+        desc: "Denoised hyperspectral datasets of hybrid perovskite materials in Python, and used Scikit-learn and Nimfa to build unsupervised Non-negative Matrix Factorization models to extract image and spectral features",
         img: "/nmf.png",
         link: "https://research.jayandsparrow.com/nmf"
     },
@@ -17,7 +17,7 @@ const items = [
         id: 2,
         color: "from-watermelon to-lilac",
         title: "ML analysis of HDF5 data (VAE)",
-        desc: "Training, validating, and analyzing unsupervised and semi-supervised variational autoencoder models of hyperspectral datasets of energy materials and of artificial datasets in Pytorch, demonstrating relationships between image and spectral features",
+        desc: "Trained, validated, and analyzed unsupervised and semi-supervised variational autoencoder models of hyperspectral datasets of energy materials and of artificial datasets in Pytorch, demonstrating relationships between image and spectral features",
         img: "/ssvae.png",
         link: "https://research.jayandsparrow.com/vae"
     },
@@ -25,23 +25,23 @@ const items = [
         id: 3,
         color: "from-lilac to-purple",
         title: "Full stack personal blog",
-        desc: "Full stack web app built for Ruby Maghoney using React, Node.js, Express.js, and MySQL, deployed on a Digital Ocean droplet using an Nginx server",
+        desc: "Full stack web app built for Ruby M. using React, Node.js, Express.js, and MySQL, deployed on a Digital Ocean droplet using an Nginx reverse-proxy server",
         img: "/foureyedbutterfly.png",
         link: "https://foureyedbutterfly.com/"
     },
     {
         id: 4,
         color: "from-purple to-blue",
-        title: "Sorting algorithm comparison",
-        desc: "Comparing 8 sorting algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript, and deploying the results displayed in Chartjs to a static web page",
+        title: "Sorting algorithm benchmark",
+        desc: "Compared 8 sorting algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript; deployed the results to a static web page, visualized using Chart.js",
         img: "/sorting.png",
         link: "https://jonperk318.github.io/sorting-algorithms/"
     },
     {
         id: 5,
         color: "from-blue to-light-blue",
-        title: "Searching algorithm comparison",
-        desc: "Comparing 3 searching algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript, and deploying the results displayed in Chartjs to a static web page",
+        title: "Searching algorithm benchmark",
+        desc: "Compared 3 searching algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript; created data visualizations using Chart.js",
         img: "/searching.png",
         link: "https://jonperk318.github.io/searching-algorithms/"
     },
