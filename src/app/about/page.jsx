@@ -28,7 +28,7 @@ const AboutPage = () => {
                         <div className="flex flex-col gap-8 justify-center">
                             <p className="text-md">Hi, I&apos;m JP. I&apos;m a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
                                 I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower.</p>
-                                <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built two web sites from scratch, developed several tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
+                                <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built three web sites from scratch, programmed tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
                             <p className="text-md">When I&apos;m not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
@@ -92,7 +92,7 @@ const AboutPage = () => {
                             <p className="italic">Birmingham, AL</p>
                             <p className="bg-black rounded-xl w-fit p-2">May 2022 - Dec 2024</p>
                             <p className="font-semibold">Minors in Mathematics, Computer and Information Sciences</p>
-                            <p className="italic">High distinguished honors, presidential honor roll, NASA Alabama Space Grant Consortium scholarship recipient</p>
+                            <p className="italic">Distinguished honors, presidential honor roll, NASA Alabama Space Grant Consortium scholarship recipient</p>
                         </div>
                     </div>
                 </div>
