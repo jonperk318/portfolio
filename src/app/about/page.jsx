@@ -3,10 +3,10 @@ import {motion} from "framer-motion";
 
 const AboutPage = () => {
     return (
-        <motion.div 
-        className="h-full" 
-        initial={{y: "-400vh"}} 
-        animate={{y: "0%"}} 
+        <motion.div
+        className="h-full"
+        initial={{y: "-400vh"}}
+        animate={{y: "0%"}}
         transition={{duration: 1}}
         >
             {/* CONTAINER */}
@@ -26,10 +26,30 @@ const AboutPage = () => {
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
-                            <p className="text-md">Hi, I&apos;m JP. I&apos;m a student at the University of Alabama at Birmingham studying computational physics with minors in computer science and mathematics.
-                                I reasearch machine learning applications in signal processing and work full time as an intelligence analyst at DarkTower.</p>
-                                <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium award, I am graduating with distinguished honors. I have built three web sites from scratch, programmed tools to expedite web scraping, created more than 40 ML models, and tested eleven algorithm benchmarks in four languages. I have a lot of fun solving complex problems and am passionate about building new technologies, particularly for improving our understanding of the world and mitigating our negative impacts.</p>
-                            <p className="text-md">When I&apos;m not behind a computer screen, I enjoy spending time with my partner, Ruby, walking my dog, Marlowe, singing, playing the guitar, cooking, and learning foreign languages.</p>
+                            <p className="text-md">Hi, I&apos;m JP. I&apos;m a
+                                Software Engineer at Parsons Corporation in Baltimore, MD.
+                                I am currently working on a team building an engine to
+                                optimize neural networks. I have built a fully functioning
+                                web application with user authentication and a dashboard
+                                that uses real-time updates sent from the backend. This app,
+                                built in React with TypeScript on the front end and FastAPI
+                                on the backend, allows the user to configure the engine
+                                and understand its progress.</p>
+                            <p className= "text-md">I am also a former student at the
+                                University of Alabama at Birmingham where I studied computational
+                                physics with minors in computer science and mathematics.
+                                There I reasearched machine learning applications in signal
+                                processing and worked full time as an intelligence analyst at DarkTower.</p>
+                            <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium
+                                award, I graduated with distinguished honors. I have built four web sites
+                                from scratch, programmed tools to expedite web scraping, trained more than
+                                40 ML models, and tested eleven algorithm benchmarks in four languages.
+                                I have a lot of fun solving complex problems and am passionate about building
+                                new technologies, particularly for improving our understanding of the world
+                                and mitigating our negative impacts.</p>
+                            <p className="text-md">When I&apos;m not behind a computer screen,
+                            I enjoy spending time with my partner, Ruby, walking my dog, Marlowe,
+                            creating music, cooking, and learning foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
                                 <div>
@@ -70,7 +90,7 @@ const AboutPage = () => {
                                     </svg>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 {/* EDUCATION CONTAINER */}
