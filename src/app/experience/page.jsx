@@ -7,19 +7,32 @@ import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJetbrains, SiJupyter, Si
 import { RiNextjsFill } from "react-icons/ri";
 
 const ExperiencePage = () => {
+
+    const icons = [
+        {element: SiNumpy, href: "https://www.python.org/", hover: "fill-light-blue"},
+        {element: SiScipy, href: "https://www.scipy.org/", hover: "fill-light-blue"},
+    ];
+
     return (
-        <motion.div 
-        className="h-full" 
-        initial={{y: "-500vh"}} 
-        animate={{y: "0%"}} 
+        <motion.div
+        className="h-full"
+        initial={{y: "-500vh"}}
+        animate={{y: "0%"}}
         transition={{duration: 1}}
-        >   
+        >
             {/* CONTAINER */}
             <div className="h-full">
                 {/* SKILLS CONTAINER */}
                 <div className="h-1/3 flex flex-col px-2 sm:px-4 md:px-6 lg:px-10 xl:px-20 items-center justify-center content-center">
                     <h1 className="font-bold text-2xl pt-8">Skills</h1>
                     <div className="flex flex-row flex-wrap gap-4 justify-center p-16">
+                        {icons.map((Icon, i) => (
+                            <IconContext.Provider value={{className: "hover:scale-125 hover:" + Icon.hover, size:62 }} key={i}>
+                                <a href={Icon.href}>
+                                    <Icon.element />
+                                </a>
+                            </IconContext.Provider>
+                        ))}
                         <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:62}}>
                             <a href="https://www.python.org/">
                                 <FaPython />
@@ -216,6 +229,33 @@ const ExperiencePage = () => {
                     <h1 className="font-bold text-2xl">Work Experience</h1>
                     {/* EXPERIENCE LIST */}
                     <div className="">
+                        {/* EXPERIENCE ITEM 0 */}
+                        <div className="flex justify-between h-72 md:h-48">
+                            {/* LEFT */}
+                            <div className="w-1/2"></div>
+                            {/* CENTER */}
+                            <div>
+                                {/* LINE */}
+                                <div className="w-1 h-full bg-light-blue rounded relative">
+                                    <div className="absolute w-5 h-5 rounded-full ring-4 bg-light-blue -left-2"></div>
+                                </div>
+                            </div>
+                            {/* RIGHT */}
+                            <div className="w-1/2 pl-12 pt-6 pr-8 md:pr-32">
+                                {/* JOB TITLE */}
+                                <div className="bg-fuchsia text-black rounded-b-xl rounded-e-xl p-2 font-semibold">
+                                    Software Engineer</div>
+                                {/* JOB DESC */}
+                                <div className="p-2 text-sm italic">
+                                    Built a full stack web application using React/TS and FastAPI enabling users to upload, optimize, and benchmark neural networks. Implemented authentication and authorization, and designed intuitive way for users to configure optimization pipeline. Integrated UI with backend modules in Python and optimized deployment in Docker containers.</div>
+                                {/* JOB DATE */}
+                                <div className="p-2 text-fuchsia text-sm font-semibold">
+                                    Dec 2024 - Present</div>
+                                {/* JOB COMP NAME */}
+                                <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">
+                                    Parsons Corporation</div>
+                            </div>
+                        </div>
                         {/* EXPERIENCE ITEM 1 */}
                         <div className="flex justify-between h-72 md:h-48">
                             {/* LEFT */}
@@ -228,7 +268,7 @@ const ExperiencePage = () => {
                                     Tracked and documented vulnerabilities of Fortune 500 clients, built tools in Python to increase data collection efficiency, deployed OSINT software in a Linux environment, wrote automation scripts, analyzed leaked SQL databases</div>
                                 {/* JOB DATE */}
                                 <div className="p-2 text-fuchsia text-sm font-semibold">
-                                    Oct 2023 - Present</div>
+                                    Oct 2023 - Dec 2024</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit float-right mr-3">
                                     DarkTower</div>
@@ -429,7 +469,7 @@ const ExperiencePage = () => {
                                     May 2014 - Aug 2019</div>
                                 {/* JOB COMP NAME */}
                                 <div className="p-1 rounded bg-silver text-black text-sm font-semibold w-fit ml-3">
-                                    Word of Life</div>
+                                    WOL</div>
                             </div>
                         </div>
                     </div>
