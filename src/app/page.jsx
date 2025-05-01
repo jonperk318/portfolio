@@ -2,6 +2,8 @@
 import {motion} from "framer-motion"
 import Link from "next/link"
 
+import CldImage from "@/components/cldImg"
+
 const Homepage = () => {
 
       return  (
@@ -27,7 +29,9 @@ const Homepage = () => {
                 <div className="w-100% h-full mx-0 opacity-40 blur-lg bg-purple">
                 </div>
               </div>
-              <img src="/IMG_0207.JPG" className="relative object-contain rounded-xl" alt="sky" />
+              <div className="relative object-contain">
+                <CldImage publicId={"IMG_0207_pfxdlp"} alt="sky" />
+              </div>
             </div>
           </div>
         </motion.div>

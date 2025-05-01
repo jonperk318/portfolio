@@ -78,7 +78,7 @@ const Navbar = () => {
             {/* LOGO */}
             <div className="z-40 justify-center">
                 <Link href="/">
-                    <img src="/logo.png" className="w-16 hover:scale-125" alt="logo" />
+                    <img src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png" className="w-16 hover:scale-125" alt="logo" />
                 </Link>
             </div>
             {/* LINKS */}
@@ -130,10 +130,10 @@ const Navbar = () => {
                 </button>
                 {/* MENU LINKS */}
                 {open && (
-                    <motion.div 
-                        variants={listVariants} 
-                        initial="closed" 
-                        animate="open" 
+                    <motion.div
+                        variants={listVariants}
+                        initial="closed"
+                        animate="open"
                         className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
                         {links.map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>

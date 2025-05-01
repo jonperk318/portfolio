@@ -1,38 +1,40 @@
 "use client"
+import CldImage from "@/components/cldImg";
 import {motion} from "framer-motion";
 
-const photos = [
-    "/gallery/horsehair.jpeg", "/gallery/high-peak.jpg", "/gallery/mar2.jpeg", "/gallery/fancy.jpeg", "/gallery/empire.jpeg", 
-    "/gallery/empire2.jpeg", "/gallery/happy.JPG", "/gallery/jellyfish.jpeg", "/gallery/aquarium.jpg", "/gallery/aquarium2.jpeg", 
-    "/gallery/meditate.jpg", "/gallery/tank.jpeg", "/gallery/tennissee.JPG", "/gallery/woah.jpeg", "/gallery/mel.jpeg", 
-    "/gallery/horsehair2.JPG", "/gallery/horsehair3.JPG", "/gallery/flower.jpeg", "/gallery/flowers.jpeg", "/gallery/universal.jpeg", 
-    "/gallery/wine.jpeg", "/gallery/carlowe.JPG", "/gallery/car.jpg", "/gallery/danish.jpeg", "/gallery/jellyfish3.jpeg", 
-    "/gallery/light-tree.jpeg", "/gallery/mar1.jpeg", "/gallery/ocean.jpeg", "/gallery/plants.jpg", "/gallery/pink-flowers.jpeg", 
-    "/gallery/pj.jpeg", "/gallery/ruffner.jpeg", "/gallery/moss-rock.jpeg", "/gallery/pumpkin.jpeg", "/gallery/soo.JPG", 
-    "/gallery/sunny.jpeg", "/gallery/tulips.jpeg", "/gallery/wedding.jpeg", "/gallery/wicked.jpeg", 
-    "/gallery/peace.JPG", "/gallery/gardens.jpeg", "/gallery/cactus.jpeg", "/gallery/cheaha2.jpeg", 
-    "/gallery/cheaha.jpeg", "/gallery/palm.jpeg", "/gallery/snow.jpeg", "/gallery/glow.jpeg", "/gallery/lunar-eclipse.jpg", 
-    "/gallery/mesa.jpeg", "/gallery/ruins.jpeg", "/gallery/miami.jpeg", "/gallery/wetland.jpeg", "/gallery/everglades.PNG", 
-    "/gallery/astronaut.jpeg", "/gallery/house-date.jpeg", "/gallery/yellow-flowers.JPG", "/gallery/fred.JPG", "/gallery/fred2.JPG", 
-    "/gallery/kabsa.JPG", "/gallery/seol.jpeg", "/gallery/guard.jpeg", "/gallery/noodles.jpeg", "/gallery/korea.JPG", 
-    "/gallery/plant.JPG", "/gallery/hike.jpg", "/gallery/high-peak.jpg", "/gallery/flashlight.JPG", "/gallery/leaf.JPG", 
-    "/gallery/lake.JPG", "/gallery/squad.jpeg", "/gallery/lighthouse.jpg", "/gallery/concert.JPG", "/gallery/cascade.jpg", 
-    "/gallery/mist.JPG", "/gallery/beach.JPG"
-]
+/*
+  const [photos, setPhotos] = useState("");
+  const [loading, setLoading] = useState(true);
+  const getData = async (tag) => {
+    const response = await fetch(
+      `https://res.cloudinary.com/difdjam1a/image/list/${tag}.json`
+    );
+    console.log(response)
+    const data = await response.json();
+    setPhotos(data);
+    setLoading(false);
+  };
+  useEffect(() => {
+    getData("portfolio-gallery");
+  }, []);
+*/
+
 
 const PhotosPage = () => {
 
+    const photos = ["aquarium_otjp4f", "beach_m5ay3c", "car_oaeueh", "carlowe_xrszq7", "cascade_gsi054", "concert_z9chv5", "glow_mkm8pz", "happy_coaa8o", "high-peak_ybn2cc", "hike_nxfwt0", "jellyfish_amo3os", "lake_lhx6dt", "leaf_ikyens", "lighthouse_c1l0cs", "lunar-eclipse_mxmabx", "meditate_nrjd4q", "mist_cr7jkt", "ocean_ibypjb", "peace_an2llt", "plant_eroddx", "plants_hy8zdt", "soo_qunhpl", "wicked_xyzlwy", "yellow-flowers_cvmqru", "aquarium2_ktxfk5", "cactus_ue7e7p", "danish_khjwcs", "empire_d3h1dc", "flashlight_ndgrfj", "flowers_d65ggr", "gardens_g6blhy", "guard_nmqxdm", "horsehair2_svsetj", "horsehair_p2dncx", "horsehair3_rigiej", "house-date_jgtzvu", "jellyfish2_gvcn2y", "jellyfish3_khp90a", "korea_lwc29n", "light-tree_ga6wdc", "mar1_peptw8", "mel_mrpqg7", "mesa_w4mmtd", "miami_btrjcl", "moss-rock_samkx8", "noodles_lgotyz", "palm_kjkibj", "pj_l5seip", "pumpkin_hlisim", "ruffner_g3dhpu", "seol_cewicp", "squad_jtwwt5", "sunny_b0pjzi", "tank_ok7dmj", "tennissee_falg9y", "tree_nfkssu", "wedding_j345p6", "universal_impuim", "wetland_srkzfl", "woah_yk3jv0", "wine_sp2kro", "astronaut_fqvqvq", "cheaha2_qkidec", "fancy_gby5uo", "flower_cozflz", "magnets_klexpl", "mar2_kt9lun", "pink-flowers_jqezjp", "ruins_n1wlx8", "snow_ktxrnc", "tulips_zwqmpy", "cheaha_ovuvrk", "kabsa_mkf8o5", "everglades_hcrtdr", "fred_uwvrjg", "fred2_tga6n2"]
+
     return (
-        <motion.div 
-        className="h-full" 
-        initial={{y: "-400vh"}} 
-        animate={{y: "0%"}} 
+        <motion.div
+        className="h-full"
+        initial={{y: "-400vh"}}
+        animate={{y: "0%"}}
         transition={{duration: 1}}
         >
             <div className="columns md:columns-2 lg:columns-3 relative z-10 gap-4 justify-center bg-black/[0.5] p-4 space-y-4">
-                {photos.map((photo) => (
-                    <div key={photo.split("/")[2].split(".")[0]} className="h-auto max-w-full">
-                        <img src={photo} alt={photo.split("/")[2].split(".")[0]} />
+                {photos.map((photo, idx) => (
+                    <div key={idx} className="h-auto max-w-full">
+                      <CldImage publicId={photo} />
                     </div>
                 ))}
             </div>

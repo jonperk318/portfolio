@@ -1,6 +1,8 @@
 "use client"
 import {motion} from "framer-motion";
 
+import CldImage from "@/components/cldImg";
+
 const AboutPage = () => {
     return (
         <motion.div
@@ -20,7 +22,9 @@ const AboutPage = () => {
                             <div className="h-full mx-0 opacity-40 blur-lg bg-light-blue">
                             </div>
                         </div>
-                        <img src="/profile.JPG" className="relative object-contain rounded-xl z-10" alt="profile" />
+                        <div className="relative object-contain z-10" alt="profile">
+                          <CldImage publicId={"profile_yzioak"} />
+                        </div>
                     </div>
                     {/* TEXT */}
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">

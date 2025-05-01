@@ -4,11 +4,12 @@ import { IconContext } from "react-icons";
 
 import { FaAws, FaCss3Alt, FaDigitalOcean, FaDocker, FaGitAlt, FaHtml5, FaJava,
         FaLinux, FaNode, FaPython, FaReact, FaSass } from "react-icons/fa";
-import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJetbrains, SiJupyter,
+import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJupyter,
         SiMacos, SiMariadb, SiMysql, SiNumpy, SiScipy, SiOpencv, SiPandas,
-        SiPytorch, SiScikitlearn, SiTailwindcss, SiTensorflow, SiVisualstudiocode,
+        SiPytorch, SiScikitlearn, SiTailwindcss, SiTensorflow,
         SiVite, SiWebpack, SiFastapi, SiVim} from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 const ExperiencePage = () => {
 
@@ -42,7 +43,7 @@ const ExperiencePage = () => {
         {elm: FaAws, href: "https://aws.amazon.com/", hover: "fill-teal"},
         {elm: FaDigitalOcean, href: "https://www.digitalocean.com/", hover: "fill-teal"},
         {elm: SiVim, href: "https://www.vim.org/", hover: "fill-teal"},
-        {elm: SiVisualstudiocode, href: "https://code.visualstudio.com/", hover: "fill-teal"},
+        {elm: BiLogoVisualStudio, href: "https://code.visualstudio.com/", hover: "fill-teal"},
         {elm: FaLinux, href: "https://www.linux.org/", hover: "fill-purple"},
         {elm: SiMacos, href: "https://developer.apple.com/macos/", hover: "fill-purple"},
         {elm: SiGnu, href: "https://www.gnu.org/home.en.html", hover: "fill-purple"},

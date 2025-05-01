@@ -2,6 +2,7 @@
 import Link from "next/link"
 import {motion, useScroll, useTransform} from "framer-motion";
 import { useRef } from "react";
+import CldImage from "@/components/cldImg";
 
 
 const items = [
@@ -10,7 +11,7 @@ const items = [
         color: "from-salmon to-watermelon",
         title: "ML analysis of HDF5 data (NMF)",
         desc: "Denoised hyperspectral datasets of hybrid perovskite materials in Python, and used Scikit-learn and Nimfa to build unsupervised Non-negative Matrix Factorization models to extract image and spectral features",
-        img: "/nmf.png",
+        img: "nmf_h2pza2",
         link: "https://research.jayandsparrow.com/nmf"
     },
     {
@@ -18,7 +19,7 @@ const items = [
         color: "from-watermelon to-lilac",
         title: "ML analysis of HDF5 data (VAE)",
         desc: "Trained, validated, and analyzed unsupervised and semi-supervised variational autoencoder models of hyperspectral datasets of energy materials and of artificial datasets in Pytorch, demonstrating relationships between image and spectral features",
-        img: "/ssvae.png",
+        img: "ssvae_rg3ptu",
         link: "https://research.jayandsparrow.com/vae"
     },
     {
@@ -26,7 +27,7 @@ const items = [
         color: "from-lilac to-purple",
         title: "Full stack personal blog",
         desc: "Full stack web app built for Ruby M. using React, Node.js, Express.js, and MySQL, deployed on a Digital Ocean droplet using an Nginx reverse-proxy server",
-        img: "/foureyedbutterfly.png",
+        img: "foureyedbutterfly_afgcq1",
         link: "https://foureyedbutterfly.com/"
     },
     {
@@ -34,7 +35,7 @@ const items = [
         color: "from-purple to-blue",
         title: "Sorting algorithm benchmark",
         desc: "Compared 8 sorting algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript; deployed the results to a static web page, visualized using Chart.js",
-        img: "/sorting.png",
+        img: "sorting_xte9dj",
         link: "https://jonperk318.github.io/sorting-algorithms/"
     },
     {
@@ -42,7 +43,7 @@ const items = [
         color: "from-blue to-light-blue",
         title: "Searching algorithm benchmark",
         desc: "Compared 3 searching algorithms implemented and tested in 4 languages: Python, Java, C++, and JavaScript; created data visualizations using Chart.js",
-        img: "/searching.png",
+        img: "searching_q0eav8",
         link: "https://jonperk318.github.io/searching-algorithms/"
     },
     {
@@ -50,7 +51,7 @@ const items = [
         color: "from-light-blue to-fuchsia",
         title: "Telegram Chat CC Parser",
         desc: "Open source intelligence tool built in Python to parse JSON files exported from Telegram channels for credit/debit card information, built to aid response of leaked sensitive information and combat financial fraud",
-        img: "/cc-parser.png",
+        img: "cc-parser_aqrk6h",
         link: "https://github.com/jonperk318/telegram-parser"
     }
 ]
@@ -63,10 +64,10 @@ const ProjectsPage = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
     return (
-        <motion.div 
-        className="h-full" 
-        initial={{y: "-400vh"}} 
-        animate={{y: "0%"}} 
+        <motion.div
+        className="h-full"
+        initial={{y: "-400vh"}}
+        animate={{y: "0%"}}
         transition={{duration: 1}}
         >
             <div className="h-[600vh] relative" ref={ref}>
@@ -104,7 +105,7 @@ const ProjectsPage = () => {
                                 <div className="flex flex-col h-[90%] gap-4 bg-white/[0.4] p-4 rounded-xl">
                                     <h1 className="text-lg font-bold lg:text-xl xl:text-2xl">{item.title}</h1>
                                     <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[510px] xl:h-[340px]">
-                                        <img src={item.img} alt={item.title} fill="true" className="rounded-xl"/>
+                                        <CldImage publicId={item.img} />
                                     </div>
                                     <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     <Link href={item.link} className="flex justify-center">
