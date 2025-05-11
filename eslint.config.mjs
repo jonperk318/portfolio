@@ -1,22 +1,26 @@
-import { defineConfig } from "eslint/config";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+import pluginNext from '@next/eslint-plugin-next';
+import parser from '@typescript-eslint/parser';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
-
-export default defineConfig([{
-    extends: compat.extends("eslint:recommended", "next/core-web-vitals"),
-
-    rules: {
-        "react/prop-types": "off",
-        "no-unused-vars": "warn",
+export default [
+  {
+    name: 'ESLint Config - nextjs',
+    languageOptions: {
+      parser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
-}]);
+    plugins: {
+      '@next/next': pluginNext,
+    },
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    rules: {
+      ...pluginNext.configs.recommended.rules,
+      ...pluginNext.configs['core-web-vitals'].rules,
+    },
+  },
+];

@@ -7,6 +7,7 @@ import { MdContactPage } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import Navlink from "./navlink";
 import {motion} from "framer-motion";
+import CldImage from "@/components/cldImg"
 
 const links = [
     {url: "/", title: "Home"},
@@ -78,7 +79,9 @@ const Navbar = () => {
             {/* LOGO */}
             <div className="z-40 justify-center">
                 <Link href="/">
-                    <img src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png" className="w-16 hover:scale-125" alt="logo" />
+                  <div className="w-16 hover:scale-125">
+                    <CldImage publicId={"logo_eznnfn.png"} />
+                  </div>
                 </Link>
             </div>
             {/* LINKS */}
@@ -89,32 +92,32 @@ const Navbar = () => {
             </div>
             {/* ICONS */}
             <div className="flex gap-4">
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-watermelon", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-watermelon", size:"24"}}>
                     <a href="https://github.com/jonperk318" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
                 </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:"24"}}>
                     <a href="https://www.instagram.com/jonperk318/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram />
                     </a>
                 </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:"24"}}>
                     <a href="https://www.linkedin.com/in/jonathan-perkins-0b1411285/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
                 </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-blue", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-blue", size:"24"}}>
                     <a href="https://www.facebook.com/jonathan.davidperkins" target="_blank" rel="noopener noreferrer">
                         <FaFacebook />
                     </a>
                 </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:"24"}}>
                     <a href="mailto:jonperk318@gmail.com" target="_blank" rel="noopener noreferrer">
                         <IoMdMail />
                     </a>
                 </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-fuchsia", size:24}}>
+                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-fuchsia", size:"24"}}>
                     <a href="https://jonperk318.github.io/resume/" target="_blank" rel="noopener noreferrer">
                         <MdContactPage />
                     </a>
@@ -134,7 +137,7 @@ const Navbar = () => {
                         variants={listVariants}
                         initial="closed"
                         animate="open"
-                        className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-gradient-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
+                        className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
                         {links.map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>
                                 <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fuchsia hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>

@@ -22,7 +22,7 @@ const AboutPage = () => {
                             <div className="h-full mx-0 opacity-40 blur-lg bg-light-blue">
                             </div>
                         </div>
-                        <div className="relative object-contain z-10" alt="profile">
+                        <div className="relative object-contain z-10">
                           <CldImage publicId={"profile_yzioak"} />
                         </div>
                     </div>

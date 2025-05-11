@@ -1,6 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@theme {
+
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-black: #0f1416;
+  --color-space-cadet: #282d40;
+  --color-davys-gray: #4a495a;
+  --color-taupe: #83828b;
+  --color-silver: #bcbcbc;
+  --color-salmon: #fe433c;
+  --color-watermelon: #f31d64;
+  --color-lilac: #a224ad;
+  --color-fuchsia: #db1df3;
+  --color-purple: #6a38b3;
+  --color-lavender: #bdadff;
+  --color-blue: #3c5081;
+  --color-light-blue: #0095ef;
+  --color-yellow: #efca00;
+  --color-teal: #43c68b;
+  --color-white: #ffffff;
+
+}
 
 .animated-background {
     background-size: 700%;
@@ -15,7 +38,7 @@
     100% {
         background-position: 0% 50%;
     }
-    
+
     50% {
         background-position: 100% 50%;
     }

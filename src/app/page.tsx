@@ -30,7 +30,7 @@ const Homepage = () => {
                 </div>
               </div>
               <div className="relative object-contain">
-                <CldImage publicId={"IMG_0207_pfxdlp"} alt="sky" />
+                <CldImage publicId={"IMG_0207_pfxdlp"} />
               </div>
             </div>
           </div>

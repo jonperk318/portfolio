@@ -2,16 +2,17 @@
 import {motion} from "framer-motion";
 import {useState, useRef} from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 const ContactPage = () => {
 
-    const form = useRef();
+    const form = useRef(null);
 
     const sendEmail = (e) => {
       e.preventDefault();
       setError(false);
       setSuccess(false);
-  
+
       emailjs
         .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
           publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
@@ -35,10 +36,10 @@ const ContactPage = () => {
     const text = "Let's connect!"
 
     return (
-        <motion.div 
-        className="h-full" 
-        initial={{y: "-200vh"}} 
-        animate={{y: "0%"}} 
+        <motion.div
+        className="h-full"
+        initial={{y: "-200vh"}}
+        animate={{y: "0%"}}
         transition={{duration: 1}}
         >
             <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
@@ -48,7 +49,6 @@ const ContactPage = () => {
                         {text.split("").map((letter, i) => (
                             <motion.span key={i} initial={{opacity: 1}} animate={{opacity: 0}} transition={{duration: 3, repeat: Infinity, delay: i*0.1}}>{letter}</motion.span>
                         ))}
-                        <img src="https://i.giphy.com/S9ukg9TDGpMDxHKqGI.webp" className="w-32 md:w-48 xl:w-60" />
                     </div>
                 </div>
                 {/* FORM CONTAINER */}

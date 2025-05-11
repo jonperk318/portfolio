@@ -81,7 +81,7 @@ const ExperiencePage = () => {
                         {icons.map((Icon, i) => (
                             <IconContext.Provider
                                     value={{ className: "hover:scale-125 hover:"
-                                            + Icon.hover, size:62 }}
+                                      + Icon.hover, size: "62" }}
                                     key={i}>
                                 <a href={Icon.href}>
                                     <Icon.elm />
