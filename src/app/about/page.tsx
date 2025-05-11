@@ -30,24 +30,25 @@ const AboutPage = () => {
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">
                         {/* BIO */}
                         <div className="flex flex-col gap-8 justify-center">
-                            <p className="text-md">Hi, I&apos;m JP. I&apos;m a
-                                Software Engineer at Parsons Corporation in Baltimore, MD.
-                                I am currently working on a team building an engine to
-                                optimize neural networks. I have built a fully functioning
-                                web application with user authentication and a dashboard
-                                that uses real-time updates sent from the backend. This app,
-                                built in React with TypeScript on the front end and FastAPI
-                                on the backend, allows the user to configure the engine
-                                and understand its progress.</p>
+                            <p className="text-md">Hi, my name is Jonathan Perkins, but you can call me JP. I&apos;m a
+                                Software Engineer at Parsons Corporation living in Baltimore, MD.
+                                I am currently collaborating with a team building an engine to
+                                optimize neural networks, and researching UI/UX methods for displaing results. I have built a fully functioning
+                                web application with user authentication using React with TypeScript in the
+                                frontend and FastAPI with Python and SQL in the backend. This app has a dashboard
+                                that provides end users the ability to configure the network optimizaiton pipeline
+                                and receive real-time progress updates as the models are analyzed, optimized, and benchmarked. I have
+                                also written REST APIs for user authentication, model optimization parameters, workflows, and metrics.</p>
                             <p className= "text-md">I am also a former student at the
                                 University of Alabama at Birmingham where I studied computational
                                 physics with minors in computer science and mathematics.
                                 There I reasearched machine learning applications in signal
-                                processing and worked full time as an intelligence analyst at DarkTower.</p>
+                                processing to determine locations and causes of energy material degredation. I
+                                have also worked in a Software Developer role at DarkTower.</p>
                             <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium
-                                award, I graduated with distinguished honors. I have built four web sites
-                                from scratch, programmed tools to expedite web scraping, trained more than
-                                40 ML models, and tested eleven algorithm benchmarks in four languages.
+                                award, I graduated with distinguished honors and received a 3.75 GPA. I have built five web sites
+                                from scratch, programmed tools to expedite web scraping and combat fraud, trained more than
+                                40 ML models, and written eleven algorithm benchmarks in four different languages.
                                 I have a lot of fun solving complex problems and am passionate about building
                                 new technologies, particularly for improving our understanding of the world
                                 and mitigating our negative impacts.</p>

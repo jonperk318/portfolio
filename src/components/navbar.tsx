@@ -7,7 +7,6 @@ import { MdContactPage } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import Navlink from "./navlink";
 import {motion} from "framer-motion";
-import CldImage from "@/components/cldImg"
 
 const links = [
     {url: "/", title: "Home"},
@@ -75,13 +74,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 text-xl">
+        <div className="h-full flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-12 xl:px-18 text-xl">
             {/* LOGO */}
             <div className="z-40 justify-center">
                 <Link href="/">
-                  <div className="w-16 hover:scale-125">
-                    <CldImage publicId={"logo_eznnfn.png"} />
-                  </div>
+                    <img src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png" className="w-16 hover:scale-125" alt="logo" />
                 </Link>
             </div>
             {/* LINKS */}
@@ -126,7 +123,7 @@ const Navbar = () => {
             {/* MENU */}
             <div className="md:hidden">
                 {/* HAMBURGER */}
-                <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={()=>setOpen(!open)}>
+                <button className="w-10 h-8 flex flex-col justify-between z-50 relative cursor-pointer" onClick={()=>setOpen(!open)}>
                     <motion.div variants={topVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
                     <motion.div variants={centerVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded"></motion.div>
                     <motion.div variants={bottomVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
@@ -140,7 +137,7 @@ const Navbar = () => {
                         className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
                         {links.map(link => (
                             <motion.div variants={listItemVariants} className="" key={link.title}>
-                                <Link href={link.url} key={link.title} className={"rounded-xl p-1 hover:bg-fuchsia hover:text-black"} onClick={()=>setOpen(!open)}>{link.title}</Link>
+                                <Navlink link={link} key={link.title} />
                             </motion.div>
                         ))}
                     </motion.div>

@@ -122,7 +122,7 @@ const ExperiencePage = () => {
                     {/* EXPERIENCE LIST */}
                     <div>
                         {experiences.map((experience, i) => (
-                        <div className="flex justify-between h-72 md:h-48" key={i}>
+                        <div className="flex justify-between h-86 md:h-48" key={i}>
                             {(i % 2 == 1) &&
                             <>
                             <div className="w-1/2"></div>
@@ -135,7 +135,7 @@ const ExperiencePage = () => {
                             </div>
                             </>
                             }
-                            <div className={"w-1/2 pt-6 " + ((i % 2 == 0) ? "text-right pr-12 pl-8 md:pl-32" : "pl-12 pr-8 md:pr-32")}>
+                            <div className={"w-1/2 pt-6 " + ((i % 2 == 0) ? "text-right pr-6 pl-4 md:pl-32" : "pl-6 pr-4 md:pr-32")}>
                                 <div className={"text-black rounded-b-xl p-2 font-semibold " + ((i < 4) ? "bg-fuchsia " : "bg-light-blue ") + ((i % 2 == 0) ? "rounded-s-xl" : "rounded-e-xl")}>
                                     {experience.title}</div>
                                 <div className="p-2 text-sm italic">
