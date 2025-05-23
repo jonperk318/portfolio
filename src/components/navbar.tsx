@@ -100,7 +100,7 @@ const Navbar = () => {
                     </a>
                 </IconContext.Provider>
                 <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:"24"}}>
-                    <a href="https://www.linkedin.com/in/jonathan-perkins-0b1411285/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jonathan-david-perkins/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
                 </IconContext.Provider>
