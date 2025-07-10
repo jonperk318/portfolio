@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { IconContext } from "react-icons";
@@ -6,145 +6,211 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdContactPage } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import Navlink from "./navlink";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const links = [
-    {url: "/", title: "Home"},
-    {url: "/about", title: "About"},
-    {url: "/experience", title: "Experience"},
-    {url: "/projects", title: "Projects"},
-    {url: "https://research.jayandsparrow.com", title: "Research"},
-    {url: "/photos", title: "Photos"},
-    {url: "/contact", title: "Contact"},
+  { url: "/", title: "Home" },
+  { url: "/about", title: "About" },
+  { url: "/experience", title: "Experience" },
+  { url: "/projects", title: "Projects" },
+  { url: "/photos", title: "Photos" },
+  { url: "/contact", title: "Contact" },
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
-    const [open, setOpen] = useState(false);
+  const topVariants = {
+    closed: {
+      rotate: 0,
+    },
+    open: {
+      rotate: 45,
+    },
+  };
 
-    const topVariants = {
-        closed: {
-            rotate: 0,
-        },
-        open: {
-            rotate: 45,
-        }
-    }
+  const centerVariants = {
+    closed: {
+      opacity: 1,
+    },
+    open: {
+      opacity: 0,
+    },
+  };
 
-    const centerVariants = {
-        closed: {
-            opacity: 1,
-        },
-        open: {
-            opacity: 0,
-        }
-    }
+  const bottomVariants = {
+    closed: {
+      rotate: 0,
+    },
+    open: {
+      rotate: -45,
+    },
+  };
 
-    const bottomVariants = {
-        closed: {
-            rotate: 0,
-        },
-        open: {
-            rotate: -45,
-        }
-    }
+  const listVariants = {
+    closed: {
+      x: "100vw",
+    },
+    open: {
+      x: 0,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
 
-    const listVariants = {
-        closed: {
-            x: "100vw",
-        },
-        open: {
-            x: 0,
-            transition: {
-                //when: "beforeChildren",
-                staggerChildren: 0.15,
-            }
-        }
-    }
+  const listItemVariants = {
+    closed: {
+      x: -10,
+      opacity: 0,
+    },
+    open: {
+      x: 0,
+      opacity: 1,
+    },
+  };
 
-    const listItemVariants = {
-        closed: {
-            x: -10,
-            opacity: 0,
-        },
-        open: {
-            x: 0,
-            opacity: 1,
-        }
-    }
-
-    return (
-        <div className="h-full flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-12 xl:px-18 text-xl">
-            {/* LOGO */}
-            <div className="z-40 justify-center">
-                <Link href="/">
-                    <img src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png" className="w-16 hover:scale-125" alt="logo" />
-                </Link>
-            </div>
-            {/* LINKS */}
-            <div className="hidden md:flex gap-2 text-sm lg:gap-4 lg:text-lg xl:gap-10 xl:text-xl">
-                {links.slice(1).map((link) => (
-                    <Navlink link={link} key={link.title} />
-                ))}
-            </div>
-            {/* ICONS */}
-            <div className="flex gap-4">
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-watermelon", size:"24"}}>
-                    <a href="https://github.com/jonperk318" target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
-                    </a>
-                </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-yellow", size:"24"}}>
-                    <a href="https://www.instagram.com/jonperk318/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
-                    </a>
-                </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-light-blue", size:"24"}}>
-                    <a href="https://www.linkedin.com/in/jonathan-david-perkins/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
-                    </a>
-                </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-blue", size:"24"}}>
-                    <a href="https://www.facebook.com/jonathan.davidperkins" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook />
-                    </a>
-                </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-purple", size:"24"}}>
-                    <a href="mailto:jonperk318@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <IoMdMail />
-                    </a>
-                </IconContext.Provider>
-                <IconContext.Provider value={{className: "hover:scale-125 hover:fill-fuchsia", size:"24"}}>
-                    <a href="https://jonperk318.github.io/resume/" target="_blank" rel="noopener noreferrer">
-                        <MdContactPage />
-                    </a>
-                </IconContext.Provider>
-            </div>
-            {/* MENU */}
-            <div className="md:hidden">
-                {/* HAMBURGER */}
-                <button className="w-10 h-8 flex flex-col justify-between z-50 relative cursor-pointer" onClick={()=>setOpen(!open)}>
-                    <motion.div variants={topVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
-                    <motion.div variants={centerVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded"></motion.div>
-                    <motion.div variants={bottomVariants} animate={open ? "open" : "closed"} className="w-10 h-1 bg-fuchsia rounded origin-left"></motion.div>
-                </button>
-                {/* MENU LINKS */}
-                {open && (
-                    <motion.div
-                        variants={listVariants}
-                        initial="closed"
-                        animate="open"
-                        className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl">
-                        {links.map(link => (
-                            <motion.div variants={listItemVariants} className="" key={link.title}>
-                                <Navlink link={link} key={link.title} />
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                )}
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="h-full flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-12 xl:px-18 text-xl">
+      {/* LOGO */}
+      <div className="z-40 justify-center">
+        <Link href="/">
+          <img
+            src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png"
+            className="w-16 hover:scale-125"
+            alt="logo"
+          />
+        </Link>
+      </div>
+      {/* LINKS */}
+      <div className="hidden md:flex gap-2 text-sm lg:gap-4 lg:text-lg xl:gap-10 xl:text-xl">
+        {links.slice(1).map((link) => (
+          <Navlink link={link} key={link.title} />
+        ))}
+      </div>
+      {/* ICONS */}
+      <div className="flex gap-4">
+        <IconContext.Provider
+          value={{
+            className: "hover:scale-125 hover:fill-watermelon",
+            size: "24",
+          }}
+        >
+          <a
+            href="https://github.com/jonperk318"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+        </IconContext.Provider>
+        <IconContext.Provider
+          value={{ className: "hover:scale-125 hover:fill-yellow", size: "24" }}
+        >
+          <a
+            href="https://www.instagram.com/jonperk318/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </IconContext.Provider>
+        <IconContext.Provider
+          value={{
+            className: "hover:scale-125 hover:fill-light-blue",
+            size: "24",
+          }}
+        >
+          <a
+            href="https://www.linkedin.com/in/jonathan-david-perkins/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </IconContext.Provider>
+        <IconContext.Provider
+          value={{ className: "hover:scale-125 hover:fill-blue", size: "24" }}
+        >
+          <a
+            href="https://www.facebook.com/jonathan.davidperkins"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
+        </IconContext.Provider>
+        <IconContext.Provider
+          value={{ className: "hover:scale-125 hover:fill-purple", size: "24" }}
+        >
+          <a
+            href="mailto:jonperk318@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoMdMail />
+          </a>
+        </IconContext.Provider>
+        <IconContext.Provider
+          value={{
+            className: "hover:scale-125 hover:fill-fuchsia",
+            size: "24",
+          }}
+        >
+          <a
+            href="https://jonperk318.github.io/resume/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MdContactPage />
+          </a>
+        </IconContext.Provider>
+      </div>
+      {/* MENU */}
+      <div className="md:hidden">
+        {/* HAMBURGER */}
+        <button
+          className="w-10 h-8 flex flex-col justify-between z-50 relative cursor-pointer"
+          onClick={() => setOpen(!open)}
+        >
+          <motion.div
+            variants={topVariants}
+            animate={open ? "open" : "closed"}
+            className="w-10 h-1 bg-fuchsia rounded origin-left"
+          ></motion.div>
+          <motion.div
+            variants={centerVariants}
+            animate={open ? "open" : "closed"}
+            className="w-10 h-1 bg-fuchsia rounded"
+          ></motion.div>
+          <motion.div
+            variants={bottomVariants}
+            animate={open ? "open" : "closed"}
+            className="w-10 h-1 bg-fuchsia rounded origin-left"
+          ></motion.div>
+        </button>
+        {/* MENU LINKS */}
+        {open && (
+          <motion.div
+            variants={listVariants}
+            initial="closed"
+            animate="open"
+            className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl"
+          >
+            {links.map((link) => (
+              <motion.div
+                variants={listItemVariants}
+                className=""
+                key={link.title}
+              >
+                <Navlink link={link} key={link.title} />
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default Navbar;
