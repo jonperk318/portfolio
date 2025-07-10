@@ -10,13 +10,13 @@ const TransitionProvider = ({children}) => {
     const pathName = usePathname();
 
     return (
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
             <Starfield
                 starCount={15000}
                 starColor={[255, 255, 255]}
                 speedFactor={0.03}
                 backgroundColor="black" />
-            <div key={pathName} className="w-screen min-h-screen text-silver animated-background bg-black bg-linear-to-r from-black from-30% via-purple/[0.3] to-black">
+            <div key={pathName} className="w-screen min-h-screen text-silver">
                 <motion.div className="h-screen w-screen fixed bg-black rounded-b-[150px] z-40"
                     animate={{height: "0vh"}}
                     exit={{height: "140vh"}}
@@ -32,15 +32,13 @@ const TransitionProvider = ({children}) => {
                 </motion.div>
                 <motion.div className="h-screen w-screen fixed bg-black rounded-t-[150px] bottom-0 z-40"
                     initial={{height: "140vh"}}
-                    animate={{height: "0vh", transition: {delay: 0.3}}}
+                    animate={{height: "0vh", transition: {delay: 0.1}}}
                     key="finish" />
                 <div className="h-24">
                     <Navbar/>
                 </div>
                 <div className="h-[calc(100vh - 6rem)]">{children}</div>
             </div>
-            {/*<div className="w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-30% via-fuchsia/[0.3] to-black text-silver">*/}
-            {/*<div className="w-screen animated-background h-screen bg-black bg-linear-to-r from-black from-80% via-purple/[0.3] to-black opacity-50"></div>*/}
         </AnimatePresence>
     )
 }

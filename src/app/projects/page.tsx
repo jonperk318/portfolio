@@ -26,7 +26,7 @@ const items = [
         id: 3,
         color: "from-lilac to-purple",
         title: "Full stack personal blog",
-        desc: "Full stack web app built for Ruby M. using React, Node.js, Express.js, and MySQL, deployed on a Digital Ocean droplet using an Nginx reverse-proxy server",
+        desc: "Full stack web app built for Ruby M. using React, Node.js, Express.js, and MySQL, deployed on an Ubuntu VPS using an Nginx reverse-proxy server",
         img: "foureyedbutterfly_afgcq1",
         link: "https://foureyedbutterfly.com/"
     },
@@ -126,12 +126,12 @@ const ProjectsPage = () => {
                         <defs>
                             <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
                         </defs>
-                        <text fill="black">
-                            <textPath xlinkHref="#circlePath" className="text-xl">Software Engineer and Data Scientist</textPath>
+                        <text fill="#0095ef">
+                            <textPath xlinkHref="#circlePath" className="text-xl">Full Stack Software Engineer</textPath>
                         </text>
                     </motion.svg>
                     <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 text-lg md:text-xl absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-light-blue rounded-full ring-4 ring-light-blue hover:bg-light-blue hover:text-black flex items-center justify-center">
-                        Hire Me</Link>
+                        Contact Me</Link>
                 </div>
             </div>
         </motion.div>

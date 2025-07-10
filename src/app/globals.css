@@ -44,68 +44,14 @@
     }
 }
 
-:animated-swirl {
-@grid: 1x15;
-}
-:container {
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50%,-50%);
-background:black;
-}
-@place-cell: center;
-@size: calc(@index * calc(1.1px + calc(@index * 2px)));
---delay: calc(@index * 0.1s);
-z-index: calc(10 - @index);
-border-radius:100%;
-border-color:rgb(0,0,0);
-border-style:dotted;
-border-width: calc(@index * 1px);
-animation-name: scale;
-animation-duration: 4s;
-animation-iteration-count: infinite;
-animation-timing-function: ease;
-animation-delay:var(--delay);
-transform-style: preserve-3d;
-transform: scale(1);
-@keyframes scale {
-100%,0%{
-border-color: rgb(0,0,0);
-transform: scale(1) rotate(0deg);
-}
-8%{
-border-color: rgb(255,127,0);
-}
-16%{
-border-color: rgb(255,255,0);
-}
-25%{
-border-color: rgb(127,255,0);
-}
-33%{
-border-color: rgb(0,255,0);
-}
-41%{
-border-color: rgb(0,255,127);
-}
-50%{
-border-color: rgb(0,255,255);
-transform: scale(1.1) rotate(45deg);
-}
-58%{
-border-color: rgb(0,127,255);
-}
-66%{
-border-color: rgb(0,0,255);
-}
-75%{
-border-color: rgb(127,0,255);
-}
-83%{
-border-color: rgb(255,0,255);
-}
-91%{
-border-color: rgb(255,0,127);
-}
+.gradient-background {
+  background:
+    radial-gradient(at 63vw 53vh, var(--color-black) 6%, transparent 35%),
+    radial-gradient(at 5vw 3vh, var(--color-black) 0px, transparent 15%),
+    radial-gradient(at 40vw 75vh, #db1df344 10%, transparent 30%),
+    radial-gradient(at 15vw 25vh, #db1df333 0px, transparent 45%),
+    radial-gradient(at 64vw 36vh, #6a38b3aa 0px, transparent 30%),
+    radial-gradient(at 31vw 51vh, #6a38b3ee 2%, transparent 45%),
+    radial-gradient(at 90vw 95vh, #6a38b366 0px, transparent 40%),
+    var(--color-black);
 }

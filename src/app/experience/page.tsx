@@ -2,14 +2,15 @@
 import {motion} from "framer-motion";
 import { IconContext } from "react-icons";
 
-import { FaAws, FaCss3Alt, FaDigitalOcean, FaDocker, FaGitAlt, FaHtml5, FaJava,
-        FaLinux, FaNode, FaPython, FaReact, FaSass } from "react-icons/fa";
+import { FaAws, FaCss3Alt, FaDocker, FaGitAlt, FaHtml5, FaJava,
+        FaLinux, FaNode, FaPython, FaReact, FaRust, FaSass } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { SiCplusplus, SiGnu, SiGnubash, SiJavascript, SiJupyter,
-        SiMacos, SiMariadb, SiMysql, SiNumpy, SiScipy, SiOpencv, SiPandas,
+        SiMacos, SiMysql, SiNumpy, SiScipy, SiPandas,
         SiPytorch, SiScikitlearn, SiTailwindcss, SiTensorflow,
-        SiVite, SiWebpack, SiFastapi, SiVim} from "react-icons/si";
+        SiVite, SiWebpack, SiFastapi, SiVim, SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { BiLogoVisualStudio } from "react-icons/bi";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const ExperiencePage = () => {
 
@@ -23,8 +24,8 @@ const ExperiencePage = () => {
         {elm: SiTensorflow, href: "https://www.tensorflow.org/", hover: "fill-light-blue"},
         {elm: SiScikitlearn, href: "https://scikit-learn.org/stable/index.html", hover: "fill-light-blue"},
         {elm: SiJupyter, href: "https://jupyter.org/", hover: "fill-light-blue"},
-        {elm: FaJava, href: "https://www.java.com/", hover: "fill-watermelon"},
         {elm: SiJavascript, href: "https://www.javascript.com/", hover: "fill-yellow"},
+        {elm: SiTypescript, href: "https://www.typescriptlang.org/", hover: "fill-yellow"},
         {elm: FaNode, href: "https://nodejs.org/", hover: "fill-yellow"},
         {elm: FaReact, href: "https://react.dev/", hover: "fill-yellow"},
         {elm: SiVite, href: "https://vitejs.dev/", hover: "fill-yellow"},
@@ -34,16 +35,16 @@ const ExperiencePage = () => {
         {elm: FaCss3Alt, href: "https://www.w3schools.com/css/", hover: "fill-lilac"},
         {elm: SiTailwindcss, href: "https://tailwindcss.com/", hover: "fill-lilac"},
         {elm: FaSass, href: "https://sass-lang.com/", hover: "fill-lilac"},
+        {elm: FaJava, href: "https://www.java.com/", hover: "fill-watermelon"},
+        {elm: FaRust, href: "https://www.rust-lang.org/", hover: "fill-watermelon"},
         {elm: SiCplusplus, href: "https://www.w3schools.com/cpp/", hover: "fill-blue"},
-        {elm: SiOpencv, href: "https://opencv.org/", hover: "fill-blue"},
+        {elm: FaGolang, href: "https://go.dev/", hover: "fill-blue"},
         {elm: SiMysql, href: "https://www.mysql.com/", hover: "fill-teal"},
-        {elm: SiMariadb, href: "https://mariadb.org/", hover: "fill-teal"},
+        {elm: BiLogoPostgresql, href: "https://www.postgresql.org/", hover: "fill-teal"},
         {elm: FaDocker, href: "https://www.docker.com/", hover: "fill-teal"},
         {elm: FaGitAlt, href: "https://git-scm.com/", hover: "fill-teal"},
         {elm: FaAws, href: "https://aws.amazon.com/", hover: "fill-teal"},
-        {elm: FaDigitalOcean, href: "https://www.digitalocean.com/", hover: "fill-teal"},
         {elm: SiVim, href: "https://www.vim.org/", hover: "fill-teal"},
-        {elm: BiLogoVisualStudio, href: "https://code.visualstudio.com/", hover: "fill-teal"},
         {elm: FaLinux, href: "https://www.linux.org/", hover: "fill-purple"},
         {elm: SiMacos, href: "https://developer.apple.com/macos/", hover: "fill-purple"},
         {elm: SiGnu, href: "https://www.gnu.org/home.en.html", hover: "fill-purple"},
@@ -51,8 +52,8 @@ const ExperiencePage = () => {
     ];
 
     const experiences = [
-        {title: "Software Engineer", desc: "Built a full stack web application using React/TS and FastAPI enabling users to upload, optimize, and benchmark neural networks. Implemented authentication and authorization, and designed intuitive way for users to configure optimization pipeline. Integrated UI with backend modules in Python and optimized deployment in Docker containers.", date: "Dec 2024 - Present", comp: "Parsons Corporation"},
-        {title: "Software Developer (Intelligence Analyst II)", desc: "Built tools to increase data collection efficiency, automated retreival of 25+ TB of leaked data accross Linux VMs, wrote technical reports for Fortune 500 clients, created graphics in Python and Data Studio, analyzed leaked SQL databases", date: "Oct 2023 - Dec 2024", comp: "Queen Associates, Inc. (DarkTower)"},
+        {title: "Software Engineer", desc: "Designed and built a full stack web application with OAuth and JWT-based authentication allowing users and admins to configure and monitor CNN and transformer neural network optimization engine pipelines. Architected a dashboard with TypeScript, React, Vite, and React Query, providing users with real-time metrics. Led development of scalable REST APIs in Python for user auth, task ordering, and performance metrics shared over 24 HTTP endpoints on a FastAPI ASGI server handling hundreds of concurrent requests.", date: "Jan 2025 - Present", comp: "Parsons Corporation"},
+        {title: "Intelligence Analyst II (Software Developer)", desc: "Built tools to increase data collection efficiency, automated retreival of 25+ TB of leaked data accross Linux VMs, wrote technical reports for Fortune 500 clients, created graphics in Python and Data Studio, analyzed leaked SQL databases", date: "Oct 2023 - Dec 2024", comp: "Queen Associates, Inc. (DarkTower)"},
         {title: "Machine Learning Researcher", desc: "Trained and validated deep neural nets in Pytorch using hyperspectral data of energy materials to map spectral and spatial features and understand phase stability, fully cleansed HDF5 data of cosmic rays", date: "Aug 2022 - Dec 2024", comp: "University of Alabama at Birmingham"},
         {title: "Data Scientist Intern", desc: "Participated in REU internship, used NMF and PCA to demonstrate location and cause of energy material degredation", date: "May 2023 - Aug 2023", comp: "National Science Foundation"},
         {title: "Chess Instructor", desc: "Supervised daily chess programs, implemented creative techniques to teach strategy, tactics, and critical thinking skills", date: "Aug 2022 - May 2024", comp: "The Knight School"},

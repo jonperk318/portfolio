@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TransitionProvider>{children}</TransitionProvider>
+        <div className="gradient-background">
+          <TransitionProvider>{children}</TransitionProvider>
+        </div>
       </body>
     </html>
   );

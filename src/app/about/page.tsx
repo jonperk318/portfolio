@@ -3,7 +3,9 @@ import {motion} from "framer-motion";
 
 import CldImage from "@/components/cldImg";
 
+
 const AboutPage = () => {
+
     return (
         <motion.div
         className="h-full"
@@ -19,7 +21,7 @@ const AboutPage = () => {
                     {/* IMAGE */}
                     <div className="relative h-1/2 max-w-xs md:w-1/3">
                         <div className="absolute -inset-2">
-                            <div className="h-full mx-0 opacity-40 blur-lg bg-light-blue">
+                            <div className="h-full mx-0 opacity-40 blur-lg bg-purple">
                             </div>
                         </div>
                         <div className="relative object-contain z-10">
@@ -29,32 +31,43 @@ const AboutPage = () => {
                     {/* TEXT */}
                     <div className="h-full w-2/3 flex flex-col px-1 sm:px-2 md:px-3 lg:px-5 xl:px-10 gap-24 md:gap-32 lg:gap-48">
                         {/* BIO */}
-                        <div className="flex flex-col gap-8 justify-center">
-                            <p className="text-md">Hi, my name is Jonathan Perkins, but you can call me JP. I&apos;m a
+                        <div className="flex flex-col gap-8 justify-center text-md">
+                            <p>Hi, I&apos;m JP. I&apos;m a Full Stack
                                 Software Engineer at Parsons Corporation living in Baltimore, MD.
                                 I am currently collaborating with a team building an engine to
-                                optimize neural networks, and researching UI/UX methods for displaing results. I have built a fully functioning
-                                web application with user authentication using React with TypeScript in the
-                                frontend and FastAPI with Python and SQL in the backend. This app has a dashboard
-                                that provides end users the ability to configure the network optimizaiton pipeline
-                                and receive real-time progress updates as the models are analyzed, optimized, and benchmarked. I have
-                                also written REST APIs for user authentication, model optimization parameters, workflows, and metrics.</p>
-                            <p className= "text-md">I am also a former student at the
+                                optimize neural networks. I have designed and built a web application
+                                with OAuth and JWT-based authentication allowing users and admins to configure
+                                and monitor the optimization of CNNs and LLMs. I have architected a dashboard with
+                                TypeScript, React, Vite, and React Query, providing users with real-time metrics,
+                                and led development of scalable REST APIs in Python for user auth, task ordering,
+                                and performance metrics shared over 24 HTTP endpoints on a FastAPI ASGI server
+                                handling hundreds of concurrent JSON requests</p>
+                            <p>I am also a former student at the
                                 University of Alabama at Birmingham where I studied computational
                                 physics with minors in computer science and mathematics.
                                 There I reasearched machine learning applications in signal
-                                processing to determine locations and causes of energy material degredation. I
-                                have also worked in a Software Developer role at DarkTower.</p>
-                            <p className="text-md">As a recipient of the NASA Alabama Space Grant Consortium
-                                award, I graduated with distinguished honors and received a 3.75 GPA. I have built five web sites
-                                from scratch, programmed tools to expedite web scraping and combat fraud, trained more than
-                                40 ML models, and written eleven algorithm benchmarks in four different languages.
+                                processing to determine locations and causes of energy material degredation.</p>
+                            <p>I have also worked as an Intelligence Analyst (with more of a Software Developer focus) at DarkTower.
+                              There I developed custom web scraping and threat detection tools in Python, Bash,
+                              JavaScript, and Go according to specific needs of analysts. I also automated the retrieval
+                              of 25+ TB of leaked data across multiple Linux VMs, allowing
+                              for resident analysts to retrieve and examine 200 times more
+                              data than was initially possible in requested time frames.
+                              In my time at DarkTower, I analyzed over 3 million leaked files,
+                              crafted dozens of SQL queries, created 90+ graphics in Python
+                              and Data Studio, wrote 48 technical reports, and gave semi-weekly
+                              presentations to Fortune 500 clients.
+                              </p>
+                            <p>As a recipient of the NASA Alabama Space Grant Consortium
+                                award, I graduated from UAB with distinguished honors and received a 3.75 GPA. I have built five web applications
+                                from scratch, programmed tools to expedite web scraping and combat fraud, worked with more than
+                                20 different types of machine learning models, and written eleven algorithm benchmarks in four different languages.
                                 I have a lot of fun solving complex problems and am passionate about building
                                 new technologies, particularly for improving our understanding of the world
                                 and mitigating our negative impacts.</p>
-                            <p className="text-md">When I&apos;m not behind a computer screen,
+                            <p>When I&apos;m not behind a computer screen,
                             I enjoy spending time with my partner, Ruby, walking my dog, Marlowe,
-                            creating music, cooking, and learning foreign languages.</p>
+                            creating music, cooking, and studying foreign languages.</p>
                             <div className="flex flex-row">
                                 {/* SCROLL SVG */}
                                 <div>
@@ -66,7 +79,6 @@ const AboutPage = () => {
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
                                         width={50}
-                                        height={50}
                                         className="justify-center mt-16"
                                         >
                                         <path
