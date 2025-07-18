@@ -59,7 +59,7 @@ const items = [
 const ProjectsPage = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["5%", "-77%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-79.4%"]);
 
   return (
     <motion.div
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
           xmlns="http://www.w3.org/2000/svg"
           width={50}
           height={50}
-          className="w-screen flex items-center justify-center mb-[60px]"
+          className="w-screen flex items-center justify-center mb-24"
         >
           <path
             d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
@@ -93,9 +93,9 @@ const ProjectsPage = () => {
           <path d="M15 11L12 14L9 11" stroke="#0095ef" strokeWidth="1"></path>
         </motion.svg>
         {/* ITEMS */}
-        <div className="sticky z-40 top-0 flex h-screen gap-6 items-center overflow-hidden">
+        <div className="sticky z-40 top-0 left-0 flex h-screen gap-6 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-linear-to-r from-fuchsia to-salmon" />
+            <div className="h-screen w-[175vw] flex items-center justify-center bg-linear-to-r from-fuchsia to-salmon" />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen text-black flex items-center justify-center bg-linear-to-r ${item.color}`}

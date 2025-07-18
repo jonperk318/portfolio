@@ -13,9 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="gradient-background">
-          <TransitionProvider>{children}</TransitionProvider>
-        </div>
+        <div className="z-[-1] gradient-background fixed overflow-auto h-screen w-screen"></div>
+        <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
   );

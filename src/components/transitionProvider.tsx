@@ -13,7 +13,7 @@ const TransitionProvider = ({ children }) => {
       <Starfield
         starCount={15000}
         starColor={[255, 255, 255]}
-        speedFactor={0.03}
+        speedFactor={0.02}
         backgroundColor="black"
       />
       <div key={pathName} className="w-screen min-h-screen text-silver">
