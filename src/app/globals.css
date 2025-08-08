@@ -43,10 +43,10 @@
   background:
     radial-gradient(at 63% 53%, var(--color-black) 6%, transparent 35%),
     radial-gradient(at 5% 3%, var(--color-black) 0px, transparent 15%),
-    radial-gradient(at 40% 75%, #db1df344 10%, transparent 30%),
+    radial-gradient(at 40% 75%, #db1df322 10%, transparent 30%),
     radial-gradient(at 15% 25%, #db1df333 0px, transparent 45%),
-    radial-gradient(at 64% 36%, #6a38b3aa 0px, transparent 30%),
-    radial-gradient(at 31% 51%, #6a38b3ee 2%, transparent 45%),
-    radial-gradient(at 90% 95%, #6a38b366 0px, transparent 40%),
+    radial-gradient(at 64% 36%, #6a38b344 0px, transparent 30%),
+    radial-gradient(at 31% 51%, #6a38b3aa 2%, transparent 45%),
+    radial-gradient(at 90% 95%, #6a38b333 0px, transparent 40%),
     var(--color-black);
 }

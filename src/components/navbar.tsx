@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { MdContactPage } from "react-icons/md";
+import { MdContactPage, MdFacebook } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import Navlink from "./navlink";
 import { motion } from "framer-motion";
@@ -16,6 +16,15 @@ const links = [
   { url: "/photos", title: "Photos" },
   { url: "/contact", title: "Contact" },
 ];
+
+const icons = [
+  { url: "https://github.com/jonperk318", hover: "hover:fill-watermelon", elm: FaGithub },
+  { url: "https://www.instagram.com/jonperk318", hover: "hover:fill-yellow", elm: FaInstagram },
+  { url: "https://www.linkedin.com/in/jonathan-david-perkins", hover: "hover:fill-light-blue", elm: FaLinkedin },
+  { url: "https://www.facebook.com/jonathan.davidperkins", hover: "hover:fill-blue", elm: FaFacebook },
+  { url: "mailto:jonperk318@gmail.com", hover: "hover:fill-purple", elm: IoMdMail },
+  { url: "https://jonperk318.github.io/resume", hover: "hover:fill-fuchsia", elm: MdContactPage },
+]
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -90,81 +99,23 @@ const Navbar = () => {
       </div>
       {/* ICONS */}
       <div className="flex gap-4">
-        <IconContext.Provider
-          value={{
-            className: "hover:scale-125 hover:fill-watermelon",
-            size: "24",
-          }}
-        >
-          <a
-            href="https://github.com/jonperk318"
-            target="_blank"
-            rel="noopener noreferrer"
+        {icons.map((icon) => (
+          <IconContext.Provider
+            value={{
+              className: `${icon.hover}`,
+              size: "24",
+            }}
+            key={icon.url}
           >
-            <FaGithub />
-          </a>
-        </IconContext.Provider>
-        <IconContext.Provider
-          value={{ className: "hover:scale-125 hover:fill-yellow", size: "24" }}
-        >
-          <a
-            href="https://www.instagram.com/jonperk318/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram />
-          </a>
-        </IconContext.Provider>
-        <IconContext.Provider
-          value={{
-            className: "hover:scale-125 hover:fill-light-blue",
-            size: "24",
-          }}
-        >
-          <a
-            href="https://www.linkedin.com/in/jonathan-david-perkins/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-        </IconContext.Provider>
-        <IconContext.Provider
-          value={{ className: "hover:scale-125 hover:fill-blue", size: "24" }}
-        >
-          <a
-            href="https://www.facebook.com/jonathan.davidperkins"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook />
-          </a>
-        </IconContext.Provider>
-        <IconContext.Provider
-          value={{ className: "hover:scale-125 hover:fill-purple", size: "24" }}
-        >
-          <a
-            href="mailto:jonperk318@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IoMdMail />
-          </a>
-        </IconContext.Provider>
-        <IconContext.Provider
-          value={{
-            className: "hover:scale-125 hover:fill-fuchsia",
-            size: "24",
-          }}
-        >
-          <a
-            href="https://jonperk318.github.io/resume/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MdContactPage />
-          </a>
-        </IconContext.Provider>
+            <a
+              href={`${icon.url}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <icon.elm />
+            </a>
+          </IconContext.Provider>
+        ))}
       </div>
       {/* MENU */}
       <div className="md:hidden">

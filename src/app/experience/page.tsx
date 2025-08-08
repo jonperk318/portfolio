@@ -46,127 +46,127 @@ const ExperiencePage = () => {
     {
       elm: FaPython,
       href: "https://www.python.org/",
-      hover: "fill-light-blue",
+      hover: "hover:fill-light-blue",
     },
     {
       elm: SiFastapi,
       href: "https://fastapi.tiangolo.com/",
-      hover: "fill-light-blue",
+      hover: "hover:fill-light-blue",
     },
-    { elm: SiNumpy, href: "https://www.python.org/", hover: "fill-light-blue" },
-    { elm: SiScipy, href: "https://www.scipy.org/", hover: "fill-light-blue" },
+    { elm: SiNumpy, href: "https://www.python.org/", hover: "hover:fill-light-blue" },
+    { elm: SiScipy, href: "https://www.scipy.org/", hover: "hover:fill-light-blue" },
     {
       elm: SiPandas,
       href: "https://pandas.pydata.org/",
-      hover: "fill-light-blue",
+      hover: "hover:fill-light-blue",
     },
-    { elm: SiPytorch, href: "https://pytorch.org/", hover: "fill-light-blue" },
+    { elm: SiPytorch, href: "https://pytorch.org/", hover: "hover:fill-light-blue" },
     {
       elm: SiTensorflow,
       href: "https://www.tensorflow.org/",
-      hover: "fill-light-blue",
+      hover: "hover:fill-light-blue",
     },
     {
       elm: SiScikitlearn,
       href: "https://scikit-learn.org/stable/index.html",
-      hover: "fill-light-blue",
+      hover: "hover:fill-light-blue",
     },
-    { elm: SiJupyter, href: "https://jupyter.org/", hover: "fill-light-blue" },
+    { elm: SiJupyter, href: "https://jupyter.org/", hover: "hover:fill-light-blue" },
     {
       elm: SiJavascript,
       href: "https://www.javascript.com/",
-      hover: "fill-yellow",
+      hover: "hover:fill-yellow",
     },
     {
       elm: SiTypescript,
       href: "https://www.typescriptlang.org/",
-      hover: "fill-yellow",
+      hover: "hover:fill-yellow",
     },
-    { elm: FaNode, href: "https://nodejs.org/", hover: "fill-yellow" },
-    { elm: FaReact, href: "https://react.dev/", hover: "fill-yellow" },
-    { elm: SiVite, href: "https://vitejs.dev/", hover: "fill-yellow" },
-    { elm: RiNextjsFill, href: "https://nextjs.org/", hover: "fill-yellow" },
-    { elm: SiWebpack, href: "https://webpack.js.org/", hover: "fill-yellow" },
+    { elm: FaNode, href: "https://nodejs.org/", hover: "hover:fill-yellow" },
+    { elm: FaReact, href: "https://react.dev/", hover: "hover:fill-yellow" },
+    { elm: SiVite, href: "https://vitejs.dev/", hover: "hover:fill-yellow" },
+    { elm: RiNextjsFill, href: "https://nextjs.org/", hover: "hover:fill-yellow" },
+    { elm: SiWebpack, href: "https://webpack.js.org/", hover: "hover:fill-yellow" },
     {
       elm: FaHtml5,
       href: "https://www.w3schools.com/html/",
-      hover: "fill-lilac",
+      hover: "hover:fill-lilac",
     },
     {
       elm: FaCss3Alt,
       href: "https://www.w3schools.com/css/",
-      hover: "fill-lilac",
+      hover: "hover:fill-lilac",
     },
     {
       elm: SiTailwindcss,
       href: "https://tailwindcss.com/",
-      hover: "fill-lilac",
+      hover: "hover:fill-lilac",
     },
-    { elm: FaSass, href: "https://sass-lang.com/", hover: "fill-lilac" },
-    { elm: FaJava, href: "https://www.java.com/", hover: "fill-watermelon" },
+    { elm: FaSass, href: "https://sass-lang.com/", hover: "hover:fill-lilac" },
+    { elm: FaJava, href: "https://www.java.com/", hover: "hover:fill-watermelon" },
     {
       elm: FaRust,
       href: "https://www.rust-lang.org/",
-      hover: "fill-watermelon",
+      hover: "hover:fill-watermelon",
     },
     {
       elm: SiCplusplus,
       href: "https://www.w3schools.com/cpp/",
-      hover: "fill-blue",
+      hover: "hover:fill-blue",
     },
-    { elm: FaGolang, href: "https://go.dev/", hover: "fill-blue" },
-    { elm: SiMysql, href: "https://www.mysql.com/", hover: "fill-teal" },
+    { elm: FaGolang, href: "https://go.dev/", hover: "hover:fill-blue" },
+    { elm: SiMysql, href: "https://www.mysql.com/", hover: "hover:fill-teal" },
     {
       elm: BiLogoPostgresql,
       href: "https://www.postgresql.org/",
-      hover: "fill-teal",
+      hover: "hover:fill-teal",
     },
-    { elm: FaDocker, href: "https://www.docker.com/", hover: "fill-teal" },
-    { elm: FaGitAlt, href: "https://git-scm.com/", hover: "fill-teal" },
-    { elm: FaAws, href: "https://aws.amazon.com/", hover: "fill-teal" },
-    { elm: SiVim, href: "https://www.vim.org/", hover: "fill-teal" },
-    { elm: FaLinux, href: "https://www.linux.org/", hover: "fill-purple" },
+    { elm: FaDocker, href: "https://www.docker.com/", hover: "hover:fill-teal" },
+    { elm: FaGitAlt, href: "https://git-scm.com/", hover: "hover:fill-teal" },
+    { elm: FaAws, href: "https://aws.amazon.com/", hover: "hover:fill-teal" },
+    { elm: SiVim, href: "https://www.vim.org/", hover: "hover:fill-teal" },
+    { elm: FaLinux, href: "https://www.linux.org/", hover: "hover:fill-purple" },
     {
       elm: SiMacos,
       href: "https://developer.apple.com/macos/",
-      hover: "fill-purple",
+      hover: "hover:fill-purple",
     },
     {
       elm: SiGnu,
       href: "https://www.gnu.org/home.en.html",
-      hover: "fill-purple",
+      hover: "hover:fill-purple",
     },
     {
       elm: SiGnubash,
       href: "https://www.gnu.org/software/bash/",
-      hover: "fill-purple",
+      hover: "hover:fill-purple",
     },
   ];
 
   const experiences = [
     {
       title: "Software Engineer",
-      desc: "Designed a full stack web application allowing users to configure and monitor CNN and LLM optimization pipelines. Built a dashboard with React and TypeScript, and developed scalable REST APIs in Python shared over 24 HTTP endpoints on a FastAPI ASGI server handling hundreds of concurrent requests.",
+      desc: "Architected a full stack web application allowing users to configure neural network optimization pipelines. Built a dashboard with React, TypeScript, Vite, and Tailwind to provide real-time metrics sent via SSE. Developed scalable REST APIs in Python shared over 24 HTTP endpoints on a FastAPI ASGI server handling hundreds of concurrent requests.",
       date: "Jan 2025 - Present",
       comp: "Parsons Corporation",
     },
     {
-      title: "Intelligence Analyst II (Software Developer)",
-      desc: "Built tools to increase data collection efficiency, automated retreival of 25+ TB of leaked data accross Linux VMs, wrote technical reports for Fortune 500 clients, created graphics in Python and Data Studio, analyzed leaked SQL databases",
+      title: "Software Developer (Intelligence Analyst II)",
+      desc: "Developed custom web scraping tools in Python, Bash, JavaScript, and Go to increase data collection efficiency, automated retreival of 25+ TB of leaked data accross Linux VMs, wrote technical reports for Fortune 500 clients, created graphics in Python and Data Studio, analyzed leaked SQL databases",
       date: "Oct 2023 - Dec 2024",
       comp: "Queen Associates, Inc. (DarkTower)",
+    },
+    {
+      title: "Python Developer Intern",
+      desc: "Participated in REU internship, used NMF and PCA to demonstrate location and cause of energy material degredation",
+      date: "May 2023 - Aug 2023",
+      comp: "National Science Foundation",
     },
     {
       title: "Machine Learning Researcher",
       desc: "Trained and validated deep neural nets in Pytorch using hyperspectral data of energy materials to map spectral and spatial features and understand phase stability, fully cleansed HDF5 data of cosmic rays",
       date: "Aug 2022 - Dec 2024",
       comp: "University of Alabama at Birmingham",
-    },
-    {
-      title: "Data Scientist Intern",
-      desc: "Participated in REU internship, used NMF and PCA to demonstrate location and cause of energy material degredation",
-      date: "May 2023 - Aug 2023",
-      comp: "National Science Foundation",
     },
     {
       title: "Chess Instructor",
@@ -216,16 +216,16 @@ const ExperiencePage = () => {
         >
           <h1 className="font-bold text-2xl pt-8">Skills</h1>
           <div className="flex flex-row flex-wrap gap-4 justify-center p-16">
-            {icons.map((Icon, i) => (
+            {icons.map((icon, i) => (
               <IconContext.Provider
                 value={{
-                  className: "hover:scale-125 hover:" + Icon.hover,
+                  className: icon.hover,
                   size: "62",
                 }}
                 key={i}
               >
-                <a href={Icon.href}>
-                  <Icon.elm />
+                <a href={icon.href}>
+                  <icon.elm />
                 </a>
               </IconContext.Provider>
             ))}
