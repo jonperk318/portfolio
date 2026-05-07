@@ -8,7 +8,7 @@ const Navlink = ({ link }) => {
 
   return (
     <Link
-      className={`rounded-xl p-2 hover:bg-purple hover:text-black ${pathName === link.url && "bg-fuchsia text-black"}`}
+      className={`rounded-xl p-3 hover:bg-purple hover:ring-space-cadet hover:ring-1 hover:scale-110 ${pathName === link.url && "bg-fuchsia text-black ring-space-cadet ring-1"}`}
       href={link.url}
     >
       {link.title}

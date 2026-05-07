@@ -35,30 +35,20 @@ const AboutPage = () => {
                 Hi, I&apos;m JP. I&apos;m a Full Stack Software Engineer at
                 Parsons Corporation living in Baltimore, MD. I am currently
                 collaborating with a team building an engine to optimize neural
-                networks. I have designed and built a web application with OAuth
-                and JWT-based authentication allowing users and admins to
-                configure and monitor the optimization of CNNs and LLMs. I have
-                architected a dashboard with TypeScript, React, Vite, and React
-                Query, providing users with real-time metrics, and led
-                development of scalable REST APIs in Python for user auth, task
-                ordering, and performance metrics shared over 24 HTTP endpoints
-                on a FastAPI ASGI server handling hundreds of concurrent JSON
-                requests
-              </p>
-              <p>
-                I am also a former student at the University of Alabama at
-                Birmingham where I studied computational physics with minors in
-                computer science and mathematics. There I reasearched machine
-                learning applications in signal processing to determine
-                locations and causes of energy material degredation.
+                networks. I have built a full stack web app with a FastAPI server,
+                architected a dashboard using TypeScript and React, designed a
+                task queueing and messaging system using Python and Redis, built
+                a CI/CD pipeline, wrote comprehensive tests, designed a
+                containerization ecosystem, and integrated object detection and
+                image segmentation capabilities into the engine.
               </p>
               <p>
                 I have also worked as an Intelligence Analyst (with more of a
                 Software Developer focus) at DarkTower. There I developed custom
-                web scraping and threat detection tools in Python, Bash,
-                JavaScript, and Go according to specific needs of analysts. I
-                also automated the retrieval of 25+ TB of leaked data across
-                multiple Linux VMs, allowing for resident analysts to retrieve
+                web scraping and OSINT tools in Python, Bash, and Go according
+                to specific needs of analysts. I also automated
+                the retrieval of 25+ TB of leaked data across multiple Linux VMs,
+                allowing for resident analysts to retrieve
                 and examine 200 times more data than was initially possible in
                 requested time frames. In my time at DarkTower, I analyzed over
                 3 million leaked files, crafted dozens of SQL queries, created
@@ -67,16 +57,11 @@ const AboutPage = () => {
                 clients.
               </p>
               <p>
-                As a recipient of the NASA Alabama Space Grant Consortium award,
-                I graduated from UAB with distinguished honors and received a
-                3.75 GPA. I have built five web applications from scratch,
-                programmed tools to expedite web scraping and combat fraud,
-                worked with more than 20 different types of machine learning
-                models, and written eleven algorithm benchmarks in four
-                different languages. I have a lot of fun solving complex
-                problems and am passionate about building new technologies,
-                particularly for improving our understanding of the world and
-                mitigating our negative impacts.
+                I am also a former student at the University of Alabama at
+                Birmingham where I studied computational physics with minors in
+                computer science and mathematics. There I reasearched machine
+                learning applications in signal processing to determine
+                locations and causes of energy material degredation.
               </p>
               <p>
                 When I&apos;m not behind a computer screen, I enjoy spending

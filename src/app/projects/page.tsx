@@ -8,7 +8,7 @@ const items = [
   {
     color: "from-salmon to-watermelon",
     title: "Full stack personal blog",
-    desc: "Full stack web app built for Ruby M. using React, Sass CSS, Node, Express.js, and SQLite, deployed on an Ubuntu VPS using an Nginx reverse-proxy server",
+    desc: "Full stack web app built with TypeScript, React, Node.js, PostgreSQL, Drizzle, Clerk, tRPC, Tanstack Router, React Query, and Tailwind CSS; deployed on a VPS with an Nginx server, load balancing, CDN integration, and SSL certs",
     img: "foureyedbutterfly_ivcbqz",
     link: "https://foureyedbutterfly.com/",
   },

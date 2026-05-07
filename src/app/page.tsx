@@ -18,8 +18,8 @@ const Homepage = () => {
           <h1 className="text-4xl font-bold md:text-7xl">Jonathan Perkins</h1>
           <p className="md:text-xl font-thin">
             <span className="font-bold">Full Stack Software Engineer</span> with
-            expertise in web application development, data engineering, automation,
-            and cybersecurity
+            expertise in web application development, system design,
+            machine learning, DevOps, cybersecurity, and intel collection
           </p>
           <div className="flex gap-4 w-full">
             <Link

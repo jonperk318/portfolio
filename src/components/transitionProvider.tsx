@@ -1,4 +1,5 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navbar";
 import { AnimatePresence } from "framer-motion";
 import Starfield from "react-starfield";
@@ -7,15 +8,30 @@ import { usePathname } from "next/navigation";
 
 const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const displayName = (() => {
+    if (!pathName) return "";
+    if (pathName === "/") return "Home";
+    return pathName.charAt(1).toUpperCase() + pathName.substring(2);
+  })();
 
   return (
     <AnimatePresence>
-      <Starfield
-        starCount={15000}
-        starColor={[255, 255, 255]}
-        speedFactor={0.02}
-        backgroundColor="black"
-      />
+      {/* Render heavy/DOM-changing visual only after mount to avoid hydration mismatches */}
+      {mounted && (
+        <Starfield
+          starCount={15000}
+          starColor={[255, 255, 255]}
+          speedFactor={0.02}
+          backgroundColor="black"
+        />
+      )}
+
       <div key={pathName} className="w-screen min-h-screen text-silver">
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-b-[150px] z-40"
@@ -31,8 +47,9 @@ const TransitionProvider = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           key="text"
+          suppressHydrationWarning
         >
-          {pathName.charAt(1).toUpperCase() + pathName.substring(2)}
+          {displayName}
         </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-t-[150px] bottom-0 z-40"

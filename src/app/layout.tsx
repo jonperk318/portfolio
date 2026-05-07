@@ -1,10 +1,12 @@
 import TransitionProvider from "@/components/transitionProvider";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jonathan Perkins Portfolio",
   description: "Created with Next.js",
 };

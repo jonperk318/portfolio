@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { MdContactPage, MdFacebook } from "react-icons/md";
+import { MdContactPage } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import Navlink from "./navlink";
 import { motion } from "framer-motion";
@@ -80,13 +80,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-12 xl:px-18 text-xl">
+    <div className="h-full flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-12 xl:px-18 text-xl bg-black">
       {/* LOGO */}
       <div className="z-40 justify-center">
         <Link href="/">
           <img
             src="https://res.cloudinary.com/difdjam1a/image/upload/v1746105950/logo_eznnfn.png"
-            className="w-16 hover:scale-125"
+            className="w-16 hover:scale-110"
             alt="logo"
           />
         </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
         {icons.map((icon) => (
           <IconContext.Provider
             value={{
-              className: `${icon.hover}`,
+              className: icon.hover,
               size: "24",
             }}
             key={icon.url}
@@ -111,6 +111,7 @@ const Navbar = () => {
               href={`${icon.url}`}
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:scale-110"
             >
               <icon.elm />
             </a>
