@@ -69,7 +69,7 @@ const ProjectsPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem-60px)] flex items-center justify-center text-center text-4xl md:text-6xl lg:text-8xl">
+        <div className="w-full h-[calc(100vh-6rem-60px)] flex items-center justify-center text-center text-4xl md:text-6xl lg:text-8xl">
           My Projects
         </div>
         {/* SCROLL SVG */}
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
           xmlns="http://www.w3.org/2000/svg"
           width={50}
           height={50}
-          className="w-screen flex items-center justify-center mb-24"
+          className="w-full flex items-center justify-center mb-24"
         >
           <path
             d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
@@ -98,7 +98,7 @@ const ProjectsPage = () => {
             <div className="h-screen w-[175vw] flex items-center justify-center bg-linear-to-r from-fuchsia to-salmon" />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen text-black flex items-center justify-center bg-linear-to-r ${item.color}`}
+                className={`h-screen w-full text-black flex items-center justify-center bg-linear-to-r ${item.color}`}
                 key={item.title}
               >
                 <div className="flex flex-col h-[90%] gap-4 bg-white/[0.4] p-4 rounded-xl">
@@ -119,12 +119,12 @@ const ProjectsPage = () => {
                 </div>
               </div>
             ))}
-            <div className="h-screen w-screen flex items-center justify-center bg-linear-to-r from-fuchsia to-salmon" />
+            <div className="h-screen w-full flex items-center justify-center bg-linear-to-r from-fuchsia to-salmon" />
           </motion.div>
         </div>
       </div>
       {/* CONTACT ME */}
-      <div className="w-screen h-[115vh] flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-full h-[115vh] flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-3xl md:text-5xl pt-12">
           Do you have a project? I&apos;d love to hear about it!
         </h1>

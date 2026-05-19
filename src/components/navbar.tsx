@@ -147,7 +147,7 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="open"
-            className="absolute z-40 top-0 left-0 w-screen h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl"
+            className="fixed z-40 top-0 left-0 w-full h-screen animated-background bg-black bg-linear-to-r from-black from-10% via-light-blue/[0.3] to-black flex flex-col items-center justify-center gap-10 text-4xl"
           >
             {links.map((link) => (
               <motion.div
